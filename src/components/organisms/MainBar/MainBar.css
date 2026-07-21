@@ -1,0 +1,40 @@
+.main-bar {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.main-bar__inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-block: 18px;
+}
+
+.main-bar__vendor {
+  margin-right: auto;
+}
+
+.main-bar__actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+@media (max-width: 1199px) {
+  .main-bar__vendor {
+    display: none;
+  }
+  .main-bar__inner .search-bar {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-bar__inner {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .main-bar__actions .icon-action__label {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+.nav-bar {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.nav-bar__inner {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding-block: 8px;
+}
+
+.nav-bar__deals {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--heading);
+  transition: color 0.2s;
+}
+
+.nav-bar__deals:hover {
+  color: var(--green);
+}
+
+.nav-bar__deals svg {
+  color: var(--green);
+}
+
+.nav-bar .support-info {
+  margin-left: auto;
+}
+
+@media (max-width: 1199px) {
+  .nav-bar__inner {
+    gap: 18px;
+  }
+  .nav-bar .support-info,
+  .nav-bar__deals {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-bar .nav-menu {
+    display: none;
+  }
+}

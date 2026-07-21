@@ -1,0 +1,45 @@
+.banner {
+  /* Swap for the real photo: background-image: url('../../../assets/banner.jpg'); */
+  background:
+    radial-gradient(circle at 12% 70%, rgba(242, 135, 5, 0.18), transparent 38%),
+    radial-gradient(circle at 88% 40%, rgba(242, 183, 5, 0.22), transparent 40%),
+    radial-gradient(circle at 82% 85%, rgba(59, 183, 126, 0.18), transparent 38%),
+    #f4f6f8;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding-block: 90px;
+  text-align: center;
+}
+
+.banner__title {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.banner__subtitle {
+  font-size: 20px;
+  color: var(--heading);
+  opacity: 0.75;
+}
+
+@media (max-width: 767px) {
+  .banner__inner {
+    padding-block: 56px;
+  }
+  .banner__title {
+    font-size: 34px;
+  }
+  .banner__subtitle {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+.top-bar {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.top-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 40px;
+}
+
+.top-bar__notice {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.top-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.top-bar__help {
+  font-size: 13px;
+}
+
+.top-bar__help a {
+  font-weight: 700;
+  color: var(--green);
+}
+
+@media (max-width: 991px) {
+  .top-bar__notice,
+  .top-bar__help {
+    display: none;
+  }
+}

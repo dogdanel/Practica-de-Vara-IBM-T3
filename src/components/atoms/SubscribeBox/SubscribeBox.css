@@ -1,0 +1,30 @@
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  max-width: 330px;
+  padding: 5px;
+  background: #fff;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.subscribe-box__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 18px;
+  font-size: 14px;
+  color: var(--heading);
+}
+
+.subscribe-box__input::placeholder {
+  color: var(--text-soft);
+}
+
+.subscribe-box__button {
+  flex: none;
+}
