@@ -1,0 +1,58 @@
+.product-text {
+  margin: 0;
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.product-text--category {
+  font-size: 0.50rem;
+  font-weight: 600;
+  color: #5d6266;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.product-text--title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.product-text--brand {
+  font-size: 0.80rem;
+  font-weight: 400;
+  color: #495057;
+}
+
+.product-text--review-count {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.product-text--price-current {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.product-text--price-old {
+  font-size: 0.875rem;
+  color: #8c8c8c;
+  text-decoration: line-through;
+}
+
+.product-text--button {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.product-text--badge {
+  font-size: 0.70rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-text--rating {
+  font-size: 12px;
+  color: #989898;
+}
