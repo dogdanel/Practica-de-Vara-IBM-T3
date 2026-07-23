@@ -1,0 +1,23 @@
+.feature-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .feature-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-bar {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.feature-bar__item {
+  border-radius: 0.625rem;
+  background: #f4f6fa;
+  padding: 1.25rem;
+}

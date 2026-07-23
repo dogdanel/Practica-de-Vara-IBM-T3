@@ -1,0 +1,16 @@
+.icon-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background: var(--brand-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.icon-circle:hover {
+  opacity: 0.9;
+}

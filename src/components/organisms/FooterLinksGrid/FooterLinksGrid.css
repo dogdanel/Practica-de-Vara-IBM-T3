@@ -1,0 +1,6 @@
+.footer-links-grid {
+  display: grid;
+  flex-shrink: 0;
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}

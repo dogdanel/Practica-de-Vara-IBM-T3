@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520">
+  <g fill="none" stroke="#BFE6D2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <!-- lime slice, top area -->
+    <circle cx="430" cy="70" r="58" />
+    <circle cx="430" cy="70" r="40" />
+    <path d="M430 30v80M394 46l72 48M394 94l72-48" />
+    <path d="M430 30a40 40 0 0 1 40 40M430 30a40 40 0 0 0-40 40M430 110a40 40 0 0 1-40-40M430 110a40 40 0 0 0 40-40" />
+
+    <!-- leaf sprig, left -->
+    <path d="M40 150c30-40 90-40 110 10-30 40-90 40-110-10Z" />
+    <path d="M40 150c20 5 45 5 65 0" />
+    <path d="M70 130c-5 20-5 35 0 55" />
+
+    <!-- tomato outline, mid -->
+    <path d="M300 210c0-22 18-38 40-38s40 16 40 38-18 46-40 46-40-24-40-46Z" />
+    <path d="M340 172c-6-10-4-20 4-26M340 172c6-10 16-14 24-10" />
+
+    <!-- small dotted circles scattered -->
+    <circle cx="150" cy="60" r="3" />
+    <circle cx="170" cy="60" r="3" />
+    <circle cx="190" cy="60" r="3" />
+    <circle cx="480" cy="230" r="3" />
+    <circle cx="480" cy="250" r="3" />
+    <circle cx="480" cy="270" r="3" />
+
+    <!-- dashed arc, bottom left -->
+    <path d="M10 300a90 90 0 0 0 90 90" stroke-dasharray="4 8" />
+
+    <!-- grid patch, top right -->
+    <g transform="translate(430,0)" opacity="0.8">
+      <path d="M0 0v90M22 0v90M44 0v90M66 0v90M88 0v90" />
+      <path d="M0 0h90M0 22h90M0 44h90M0 66h90M0 88h90" />
+    </g>
+
+    <!-- carrot-ish curved shape, bottom -->
+    <path d="M120 470c10-40 30-70 60-85" />
+    <path d="M120 470c-6-14-6-28 0-40" />
+
+    <!-- pepper outline, right lower -->
+    <path d="M360 460c-20-6-32-24-28-44 4-18 22-30 42-26 18 4 30 22 26 40-4 20-22 34-40 30Z" />
+    <path d="M374 392c2-10 10-16 20-16" />
+  </g>
+</svg>

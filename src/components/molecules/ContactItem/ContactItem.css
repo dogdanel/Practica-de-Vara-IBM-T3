@@ -1,0 +1,33 @@
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.contact-item__icon {
+  color: var(--brand-green);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.contact-item__text {
+  color: var(--brand-dark);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-item__label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.contact-item__link {
+  color: var(--brand-green);
+  text-decoration: none;
+}
+
+.contact-item__link:hover {
+  text-decoration: underline;
+}

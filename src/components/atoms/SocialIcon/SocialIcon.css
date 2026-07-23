@@ -1,0 +1,17 @@
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+  background: var(--brand-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.85;
+}
