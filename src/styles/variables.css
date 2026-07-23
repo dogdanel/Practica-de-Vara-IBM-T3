@@ -1,0 +1,10 @@
+:root {
+  --brand-dark: #253d4e;
+  --brand-green: #3bb77e;
+  --brand-gray: #7e7e7e;
+  --brand-gray-light: #adadad;
+  --text-dark: #242424;
+  --border-light: #bce3c9;
+  --font-heading: 'Quicksand', sans-serif;
+  --font-body: 'Lato', sans-serif;
+}
