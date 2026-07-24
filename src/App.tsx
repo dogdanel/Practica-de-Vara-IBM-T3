@@ -1,11 +1,16 @@
-
+import React from 'react';
 import { ProductCard } from './components/molecules/ProductCard/ProductCard';
 import Product1 from './assets/Product1.png';
 import './styles/variables.css';
-import React from 'react';
 import { CategoryMenu } from './components/organisms/CategoryMenu/CategoryMenu';
+import { CategoryCard } from './molecules/CategoryCard/CategoryCard';
+import BakingMaterial from '../public/CategoryIcons/BakingMaterial.png';
 
 export const App: React.FC = () => {
+  const handleCategoryClick = () => {
+    console.log('Category clicked!');
+  };
+
   return (
     <div style={{ padding: '1rem', background: 'var(--background)' }}>
       <ProductCard
@@ -23,8 +28,14 @@ export const App: React.FC = () => {
         badgePosition="left"
       />
       <CategoryMenu />
+      <CategoryCard
+        icon={BakingMaterial}
+        title="Baking Material"
+        count={1}
+        onClick={handleCategoryClick}
+      />
     </div>
-    
   );
-}
+};
+
 export default App;
