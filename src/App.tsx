@@ -1,3 +1,4 @@
+
 import { ProductCard } from './components/molecules/ProductCard/ProductCard';
 import Product1 from './assets/Product1.png';
 import './styles/variables.css';
@@ -22,5 +23,26 @@ function App() {
     </div>
   );
 }
+
+import React from 'react';
+import { CategoryCard } from './molecules/CategoryCard/CategoryCard';
+import BakingMaterial from '../public/CategoryIcons/BakingMaterial.png';
+
+export const App: React.FC = () => {
+  const handleCategoryClick = () => {
+    console.log('Category clicked!');
+  };
+
+  return (
+    <div style={{ padding: '20px', maxWidth: '300px' }}>
+      <CategoryCard
+        icon={BakingMaterial}
+        title="Baking Material"
+        count={1}
+        onClick={handleCategoryClick}
+      />
+    </div>
+  );
+};
 
 export default App;
