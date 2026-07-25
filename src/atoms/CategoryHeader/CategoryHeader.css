@@ -1,8 +1,8 @@
-.section-header {
+.category-header {
   margin-bottom: 16px;
 }
 
-.section-header__title {
+.category-header__title {
   font-size: 18px;
   font-weight: 700;
   color: #253d4e;
@@ -11,7 +11,7 @@
   padding-bottom: 8px;
 }
 
-.section-header__title::after {
+.category-header__title::after {
   content: '';
   position: absolute;
   bottom: 0;
