@@ -1,18 +1,18 @@
 import React from 'react';
-import './SectionHeader.css';
+import './CategoryHeader.css';
 
-export interface SectionHeaderProps {
+export interface CategoryHeaderProps {
   title: string;
   className?: string;
 }
 
-export const SectionHeader: React.FC<SectionHeaderProps> = ({
+export const CategoryHeader: React.FC<CategoryHeaderProps> = ({
   title,
   className = '',
 }) => {
   return (
-    <div className={`section-header ${className}`.trim()}>
-      <h3 className="section-header__title">{title}</h3>
+    <div className={`category-header ${className}`.trim()}>
+      <h3 className="category-header__title">{title}</h3>
     </div>
   );
 };

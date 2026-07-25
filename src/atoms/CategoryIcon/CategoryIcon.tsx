@@ -1,5 +1,6 @@
 import React from 'react';
 import './CategoryIcon.css';
+import { Icon } from '@iconify/react';
 
 export interface CategoryIconProps {
   src: string;
@@ -9,12 +10,11 @@ export interface CategoryIconProps {
 
 export const CategoryIcon: React.FC<CategoryIconProps> = ({
   src,
-  alt,
   className = '',
 }) => {
   return (
     <div className={`category-icon ${className}`.trim()}>
-      <img src={src} alt={alt} className="category-icon__image" />
+      <Icon icon={src} width="30" height="30" style={{ color: '#24bf04' }} />
     </div>
   );
 };
