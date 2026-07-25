@@ -7,10 +7,6 @@ import { CategoryCard } from './molecules/CategoryCard/CategoryCard';
 import BakingMaterial from '../public/CategoryIcons/BakingMaterial.png';
 
 export const App: React.FC = () => {
-  const handleCategoryClick = () => {
-    console.log('Category clicked!');
-  };
-
   return (
     <div style={{ padding: '1rem', background: 'var(--background)' }}>
       <ProductCard
@@ -32,7 +28,6 @@ export const App: React.FC = () => {
         icon={BakingMaterial}
         title="Baking Material"
         count={1}
-        onClick={handleCategoryClick}
       />
     </div>
   );
