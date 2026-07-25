@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 18px;
-  border: 1px solid #f4f5f9;
+  border: 1px solid #dddddd;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #f2fff0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
