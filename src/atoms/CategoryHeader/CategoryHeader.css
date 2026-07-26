@@ -11,6 +11,15 @@
   padding-bottom: 8px;
 }
 
+.category-header-SBCM__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #253d4e;
+  margin: 0;
+  position: relative;
+  padding-bottom: 8px;
+}
+
 .category-header__title::after {
   content: '';
   position: absolute;
