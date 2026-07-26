@@ -16,3 +16,14 @@ export const CategoryHeader: React.FC<CategoryHeaderProps> = ({
     </div>
   );
 };
+
+export const CategoryHeaderSBCM: React.FC<CategoryHeaderProps> = ({
+  title,
+  className = '',
+}) => {
+  return (
+    <div className={`category-header-SBCM ${className}`.trim()}>
+      <h2 className="category-header-SBCM__title">{title}</h2>
+    </div>
+  );
+}
