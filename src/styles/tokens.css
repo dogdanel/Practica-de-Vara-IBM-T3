@@ -1,39 +1,39 @@
 
 
 :root {
-  /* ---- Colors: brand ---- */
+
   --color-green: #3bb77e;
   --color-green-dark: #29a56c;
   --color-green-light: #def9ec;
-  /* channel form of --color-green, for rgba() gradients */
+  
   --color-green-rgb: 59, 183, 126;
 
-  /* ---- Colors: text ---- */
+
   --color-heading: #253d4e;
   --color-text: #7e7e7e;
   --color-text-soft: #adadad;
 
-  /* ---- Colors: surfaces & lines ---- */
+
   --color-white: #fff;
   --color-bg: #fff;
   --color-border: #ececec;
   --color-border-soft: #f2f3f4;
 
-  /* ---- Colors: logo mark ---- */
+
   --color-logo-leaf: #8fd6b0;
   --color-logo-yellow: #f2b705;
   --color-logo-orange: #f28705;
   --color-logo-yellow-rgb: 242, 183, 5;
   --color-logo-orange-rgb: 242, 135, 5;
 
-  /* ---- Colors: banner backdrop ---- */
+
   --color-banner-bg: #f4f6f8;
 
-  /* ---- Shadows ---- */
+
   --shadow-sm: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.06);
   --shadow-md: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 
-  /* ---- Typography ---- */
+
   --font-sans: 'Quicksand', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   --fs-3xs: 0.5625rem;
@@ -52,12 +52,12 @@
   --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* ---- Radii ---- */
+
   --radius-sm: 0.5rem;
   --radius: 0.25rem;
   --radius-pill: 1.875rem;
 
-  /* ---- Layout ---- */
+
   --container: 75rem;
   --hairline: 0.0625rem;
 
