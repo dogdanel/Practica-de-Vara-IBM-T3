@@ -1,18 +1,18 @@
 .nav-menu ul {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 1.625rem;
 }
 
 .nav-menu__link {
   display: inline-block;
-  padding: 18px 0;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--heading);
+  padding: 1.125rem 0;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  color: var(--color-heading);
   transition: color 0.2s;
 }
 
 .nav-menu__link:hover {
-  color: var(--green);
+  color: var(--color-green);
 }

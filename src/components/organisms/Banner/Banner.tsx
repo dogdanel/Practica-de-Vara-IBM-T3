@@ -3,12 +3,7 @@ import SubscribeBox from '../../atoms/SubscribeBox/SubscribeBox'
 import CarouselDots from '../../molecules/CarouselDots/CarouselDots'
 import './Banner.css'
 
-type Slide = {
-  title: string[]
-  subtitle: string
-}
-
-const SLIDES: Slide[] = [
+const SLIDES = [
   {
     title: ['Fresh Vegetables', 'Big discount'],
     subtitle: 'Sign up for the daily newsletter',
@@ -19,9 +14,9 @@ const SLIDES: Slide[] = [
   },
 ]
 
-/** Organism: the hero banner carousel with the newsletter subscribe box. */
 function Banner() {
   const [active, setActive] = useState(0)
+
   const slide = SLIDES[active]
 
   return (
@@ -36,6 +31,8 @@ function Banner() {
         <p className="banner__subtitle">{slide.subtitle}</p>
 
         <SubscribeBox
+          placeholder="Your email address"
+          buttonLabel="Subscribe"
           onSubscribe={(email) => console.log('subscribe:', email)}
         />
 
@@ -43,6 +40,8 @@ function Banner() {
           count={SLIDES.length}
           active={active}
           onSelect={setActive}
+          ariaLabel="Banner slides"
+          dotAriaLabel={(index) => `Slide ${index + 1}`}
         />
       </div>
     </section>

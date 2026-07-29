@@ -4,17 +4,12 @@ import Button from '../Button/Button'
 import './SearchBar.css'
 
 type SearchBarProps = {
-  placeholder?: string
-  buttonLabel?: string
+  placeholder: string
+  buttonLabel: string
   onSearch?: (query: string) => void
 }
 
-/** Atom: the product search field with its submit button. */
-function SearchBar({
-  placeholder = 'Search for products...',
-  buttonLabel = 'Search',
-  onSearch,
-}: SearchBarProps) {
+function SearchBar({ placeholder, buttonLabel, onSearch }: SearchBarProps) {
   const [query, setQuery] = useState('')
 
   const handleSubmit = (event: FormEvent) => {

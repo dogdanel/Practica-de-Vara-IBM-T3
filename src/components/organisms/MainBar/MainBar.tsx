@@ -1,33 +1,59 @@
 import Button from '../../atoms/Button/Button'
-import Icon from '../../atoms/Icon/Icon'
+import {
+  ArrowRightIcon,
+  CartIcon,
+  CompareIcon,
+  HeartIcon,
+  UserIcon,
+} from '../../atoms/Icons'
 import Logo from '../../atoms/Logo/Logo'
 import SearchBar from '../../atoms/SearchBar/SearchBar'
 import IconAction from '../../molecules/IconAction/IconAction'
 import './MainBar.css'
 
-/** Organism: logo + search + vendor call-to-action + account actions. */
+const ACTION_ICON_SIZE = 22
+
 function MainBar() {
   return (
     <div className="main-bar">
       <div className="container main-bar__inner">
         <Logo />
 
-        <SearchBar onSearch={(query) => console.log('search:', query)} />
+        <SearchBar
+          placeholder="Search for products..."
+          buttonLabel="Search"
+          onSearch={(query) => console.log('search:', query)}
+        />
 
         <Button
           variant="outline"
           pill
           className="main-bar__vendor"
-          iconAfter={<Icon name="arrow-right" size={16} />}
+          iconAfter={<ArrowRightIcon size={16} />}
         >
           Became Vendor
         </Button>
 
         <div className="main-bar__actions">
-          <IconAction icon="compare" label="Compare" count={0} />
-          <IconAction icon="heart" label="Wishlist" count={0} />
-          <IconAction icon="cart" label="Cart" count={0} />
-          <IconAction icon="user" label="Account" />
+          <IconAction
+            icon={<CompareIcon size={ACTION_ICON_SIZE} />}
+            label="Compare"
+            count={0}
+          />
+          <IconAction
+            icon={<HeartIcon size={ACTION_ICON_SIZE} />}
+            label="Wishlist"
+            count={0}
+          />
+          <IconAction
+            icon={<CartIcon size={ACTION_ICON_SIZE} />}
+            label="Cart"
+            count={0}
+          />
+          <IconAction
+            icon={<UserIcon size={ACTION_ICON_SIZE} />}
+            label="Account"
+          />
         </div>
       </div>
     </div>

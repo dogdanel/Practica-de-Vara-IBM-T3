@@ -11,7 +11,6 @@ type ButtonSetProps = {
   ariaLabel?: string
 }
 
-/** Atom: a horizontal set of text link-buttons (top bar links, footer links...). */
 function ButtonSet({ items, separator = false, ariaLabel }: ButtonSetProps) {
   return (
     <nav

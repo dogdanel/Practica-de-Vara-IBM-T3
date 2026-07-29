@@ -2,6 +2,8 @@ import ButtonSet from '../../atoms/ButtonSet/ButtonSet'
 import Dropdown from '../../atoms/Dropdown/Dropdown'
 import './TopBar.css'
 
+const HELP_PHONE = '+1800900122'
+
 const LINKS = [
   { label: 'About Us' },
   { label: 'My Account' },
@@ -10,9 +12,9 @@ const LINKS = [
 ]
 
 const LANGUAGES = [{ label: 'English' }, { label: 'Français' }, { label: 'Română' }]
+
 const CURRENCIES = [{ label: 'INR' }, { label: 'USD' }, { label: 'EUR' }]
 
-/** Organism: the thin utility bar above the header. */
 function TopBar() {
   return (
     <div className="top-bar">
@@ -25,8 +27,7 @@ function TopBar() {
 
         <div className="top-bar__right">
           <span className="top-bar__help">
-            Need help? Call Us:{' '}
-            <a href="tel:+1800900122">+1800900122</a>
+            Need help? Call Us: <a href={`tel:${HELP_PHONE}`}>{HELP_PHONE}</a>
           </span>
           <Dropdown label="English" items={LANGUAGES} align="right" />
           <Dropdown label="INR" items={CURRENCIES} align="right" />

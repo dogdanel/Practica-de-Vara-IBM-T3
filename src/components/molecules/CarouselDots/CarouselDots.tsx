@@ -4,18 +4,25 @@ type CarouselDotsProps = {
   count: number
   active: number
   onSelect?: (index: number) => void
+  ariaLabel?: string
+  dotAriaLabel?: (index: number) => string
 }
 
-/** Molecule: slide indicators for the banner carousel. */
-function CarouselDots({ count, active, onSelect }: CarouselDotsProps) {
+function CarouselDots({
+  count,
+  active,
+  onSelect,
+  ariaLabel,
+  dotAriaLabel,
+}: CarouselDotsProps) {
   return (
-    <div className="carousel-dots" role="tablist" aria-label="Banner slides">
+    <div className="carousel-dots" role="tablist" aria-label={ariaLabel}>
       {Array.from({ length: count }, (_, index) => (
         <button
           key={index}
           type="button"
           role="tab"
-          aria-label={`Slide ${index + 1}`}
+          aria-label={dotAriaLabel?.(index) ?? String(index + 1)}
           aria-selected={index === active}
           className={`carousel-dots__dot${index === active ? ' is-active' : ''}`}
           onClick={() => onSelect?.(index)}

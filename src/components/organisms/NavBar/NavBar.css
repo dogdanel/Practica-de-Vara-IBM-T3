@@ -1,40 +1,40 @@
 .nav-bar {
-  border-bottom: 1px solid var(--border);
-  background: #fff;
+  border-bottom: var(--hairline) solid var(--color-border);
+  background: var(--color-white);
 }
 
 .nav-bar__inner {
   display: flex;
   align-items: center;
-  gap: 26px;
-  padding-block: 8px;
+  gap: 1.625rem;
+  padding-block: 0.5rem;
 }
 
 .nav-bar__deals {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--heading);
+  gap: 0.375rem;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  color: var(--color-heading);
   transition: color 0.2s;
 }
 
 .nav-bar__deals:hover {
-  color: var(--green);
+  color: var(--color-green);
 }
 
 .nav-bar__deals svg {
-  color: var(--green);
+  color: var(--color-green);
 }
 
 .nav-bar .support-info {
   margin-left: auto;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 74.9375rem) {
   .nav-bar__inner {
-    gap: 18px;
+    gap: 1.125rem;
   }
   .nav-bar .support-info,
   .nav-bar__deals {
@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 61.9375rem) {
   .nav-bar .nav-menu {
     display: none;
   }

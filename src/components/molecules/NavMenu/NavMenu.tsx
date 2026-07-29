@@ -12,7 +12,6 @@ type NavMenuProps = {
   entries: NavMenuEntry[]
 }
 
-/** Molecule: the main navigation — plain links mixed with dropdown menus. */
 function NavMenu({ entries }: NavMenuProps) {
   return (
     <nav className="nav-menu" aria-label="Main">

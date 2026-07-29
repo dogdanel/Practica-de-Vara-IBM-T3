@@ -2,11 +2,11 @@
   display: flex;
   align-items: stretch;
   width: 100%;
-  max-width: 360px;
-  border: 1px solid var(--green);
+  max-width: 22.5rem;
+  border: var(--hairline) solid var(--color-green);
   border-radius: var(--radius);
   overflow: hidden;
-  background: #fff;
+  background: var(--color-white);
 }
 
 .search-bar__input {
@@ -14,17 +14,17 @@
   min-width: 0;
   border: none;
   outline: none;
-  padding: 12px 16px;
-  font-size: 14px;
-  color: var(--heading);
+  padding: 0.75rem 1rem;
+  font-size: var(--fs-base);
+  color: var(--color-heading);
 }
 
 .search-bar__input::placeholder {
-  color: var(--text-soft);
+  color: var(--color-text-soft);
   font-style: italic;
 }
 
 .search-bar__button {
   border-radius: 0;
-  padding-inline: 26px;
+  padding-inline: 1.625rem;
 }

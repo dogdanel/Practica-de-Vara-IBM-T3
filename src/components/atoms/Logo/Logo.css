@@ -1,13 +1,26 @@
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .logo__mark {
-  width: 44px;
-  height: 34px;
+  width: 2.75rem;
+  height: 2.125rem;
   flex: none;
+}
+
+.logo__leaf {
+  fill: var(--color-logo-leaf);
+}
+.logo__yellow {
+  fill: var(--color-logo-yellow);
+}
+.logo__orange {
+  fill: var(--color-logo-orange);
+}
+.logo__sprout {
+  fill: var(--color-green);
 }
 
 .logo__text {
@@ -17,16 +30,16 @@
 }
 
 .logo__name {
-  font-size: 34px;
-  font-weight: 700;
-  color: var(--green);
-  letter-spacing: -0.5px;
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-green);
+  letter-spacing: -0.03125rem;
 }
 
 .logo__tagline {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1.6px;
-  color: var(--heading);
-  margin-top: 3px;
+  font-size: var(--fs-3xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1rem;
+  color: var(--color-heading);
+  margin-top: 0.1875rem;
 }

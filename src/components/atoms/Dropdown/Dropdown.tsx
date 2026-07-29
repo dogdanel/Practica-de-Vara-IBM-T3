@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
-import Icon from '../Icon/Icon'
+import { ChevronDownIcon } from '../Icons'
 import './Dropdown.css'
 
 export type DropdownItem = {
@@ -16,7 +16,6 @@ type DropdownProps = {
   align?: 'left' | 'right'
 }
 
-/** Atom: a label that toggles a small menu of links. */
 function Dropdown({
   label,
   items = [],
@@ -56,7 +55,7 @@ function Dropdown({
       >
         {iconBefore}
         <span>{label}</span>
-        <Icon name="chevron-down" size={14} className="dropdown__caret" />
+        <ChevronDownIcon size={14} className="dropdown__caret" />
       </button>
 
       {open && items.length > 0 && (

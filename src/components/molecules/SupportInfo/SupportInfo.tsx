@@ -1,4 +1,4 @@
-import Icon from '../../atoms/Icon/Icon'
+import { HeadphoneIcon } from '../../atoms/Icons'
 import './SupportInfo.css'
 
 type SupportInfoProps = {
@@ -6,11 +6,10 @@ type SupportInfoProps = {
   note?: string
 }
 
-/** Molecule: headphone icon + support phone number. */
 function SupportInfo({ phone, note = '24/7 Support Center' }: SupportInfoProps) {
   return (
     <div className="support-info">
-      <Icon name="headphone" size={30} className="support-info__icon" />
+      <HeadphoneIcon size={30} className="support-info__icon" />
       <div className="support-info__text">
         <a className="support-info__phone" href={`tel:${phone}`}>
           {phone}

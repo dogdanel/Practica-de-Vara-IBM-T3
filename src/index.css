@@ -1,23 +1,12 @@
+@import './styles/tokens.css';
+
+html {
+  font-size: 100%;
+}
+
 :root {
-  --green: #3bb77e;
-  --green-dark: #29a56c;
-  --green-light: #def9ec;
-  --heading: #253d4e;
-  --text: #7e7e7e;
-  --text-soft: #adadad;
-  --bg: #fff;
-  --border: #ececec;
-  --border-soft: #f2f3f4;
-
-  --sans: 'Quicksand', system-ui, 'Segoe UI', Roboto, sans-serif;
-
-  --container: 1200px;
-  --radius: 4px;
-  --radius-pill: 30px;
-
-  font: 400 14px/1.5 var(--sans);
-  color: var(--text);
-  background: var(--bg);
+  color: var(--color-text);
+  background: var(--color-bg);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,14 +18,15 @@
 
 body {
   margin: 0;
+  font: var(--fw-regular) var(--fs-base) / 1.5 var(--font-sans);
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  color: var(--heading);
-  font-weight: 700;
+  color: var(--color-heading);
+  font-weight: var(--fw-bold);
 }
 
 p {
@@ -63,5 +53,6 @@ input {
   width: 100%;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0.9375rem;
 }
+

@@ -1,10 +1,21 @@
 .banner {
-  /* Swap for the real photo: background-image: url('../../../assets/banner.jpg'); */
   background:
-    radial-gradient(circle at 12% 70%, rgba(242, 135, 5, 0.18), transparent 38%),
-    radial-gradient(circle at 88% 40%, rgba(242, 183, 5, 0.22), transparent 40%),
-    radial-gradient(circle at 82% 85%, rgba(59, 183, 126, 0.18), transparent 38%),
-    #f4f6f8;
+    radial-gradient(
+      circle at 12% 70%,
+      rgba(var(--color-logo-orange-rgb), 0.18),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 88% 40%,
+      rgba(var(--color-logo-yellow-rgb), 0.22),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 82% 85%,
+      rgba(var(--color-green-rgb), 0.18),
+      transparent 38%
+    ),
+    var(--color-banner-bg);
   background-size: cover;
   background-position: center;
 }
@@ -13,33 +24,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
-  padding-block: 90px;
+  gap: 1.375rem;
+  padding-block: 5.625rem;
   text-align: center;
 }
 
 .banner__title {
   display: flex;
   flex-direction: column;
-  font-size: 56px;
+  font-size: var(--fs-4xl);
   line-height: 1.15;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.03125rem;
 }
 
 .banner__subtitle {
-  font-size: 20px;
-  color: var(--heading);
+  font-size: var(--fs-xl);
+  color: var(--color-heading);
   opacity: 0.75;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .banner__inner {
-    padding-block: 56px;
+    padding-block: 3.5rem;
   }
   .banner__title {
-    font-size: 34px;
+    font-size: var(--fs-3xl);
   }
   .banner__subtitle {
-    font-size: 16px;
+    font-size: var(--fs-lg);
   }
 }

@@ -4,17 +4,12 @@ import Button from '../Button/Button'
 import './SubscribeBox.css'
 
 type SubscribeBoxProps = {
-  placeholder?: string
-  buttonLabel?: string
+  placeholder: string
+  buttonLabel: string
   onSubscribe?: (email: string) => void
 }
 
-/** Atom: the newsletter email field with its subscribe button. */
-function SubscribeBox({
-  placeholder = 'Your email address',
-  buttonLabel = 'Subscribe',
-  onSubscribe,
-}: SubscribeBoxProps) {
+function SubscribeBox({ placeholder, buttonLabel, onSubscribe }: SubscribeBoxProps) {
   const [email, setEmail] = useState('')
 
   const handleSubmit = (event: FormEvent) => {

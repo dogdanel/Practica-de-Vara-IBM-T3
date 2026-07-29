@@ -1,13 +1,13 @@
 .main-bar {
-  border-bottom: 1px solid var(--border);
-  background: #fff;
+  border-bottom: var(--hairline) solid var(--color-border);
+  background: var(--color-white);
 }
 
 .main-bar__inner {
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding-block: 18px;
+  gap: 1.875rem;
+  padding-block: 1.125rem;
 }
 
 .main-bar__vendor {
@@ -17,10 +17,10 @@
 .main-bar__actions {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 1.375rem;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 74.9375rem) {
   .main-bar__vendor {
     display: none;
   }
@@ -29,10 +29,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .main-bar__inner {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 1rem;
   }
   .main-bar__actions .icon-action__label {
     display: none;

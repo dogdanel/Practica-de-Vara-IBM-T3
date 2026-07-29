@@ -12,7 +12,6 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   iconBefore?: ReactNode
 }
 
-/** Atom: every clickable action in the UI. */
 function Button({
   variant = 'primary',
   size = 'md',
