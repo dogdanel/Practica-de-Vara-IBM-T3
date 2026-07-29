@@ -1,10 +1,11 @@
 import React from 'react';
 import type { ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ProductImage } from '../../atoms/ProductImage/ProductImage';
 import { ProductText } from '../../atoms/ProductText/ProductText';
 import { ProductBadge } from '../../atoms/ProductBadge/ProductBadge';
-import { FullStarIcon } from '../../atoms/FullStarIcon/FullStarIcon';
-import { EmptyStarIcon } from '../../atoms/EmptyStarIcon/EmptyStarIcon';
+import { FullStarIcon } from '../../Icons/FullStarIcon/FullStarIcon';
+import { EmptyStarIcon } from '../../Icons/EmptyStarIcon/EmptyStarIcon';
 import { AddToCartButton } from '../../atoms/AddToCartButton/AddToCartButton';
 import './ProductCard.css';
 
@@ -39,6 +40,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   badgePosition = 'left',
   onAddToCart,
 }) => { 
+  const { t } = useTranslation(); // 2. Inițializare hook
+
   const renderStars = () => {
     const stars: ReactNode[] = [];
     for (let i = 1; i <= 5; i++) {
@@ -83,7 +86,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         <div className="product-card__brand-info">
           <ProductText variant="brand" as="span">
-            By <span className="product-card__brand-name">{brand}</span>
+            {t('product.by')} <span className="product-card__brand-name">{brand}</span>
           </ProductText>
         </div>
 

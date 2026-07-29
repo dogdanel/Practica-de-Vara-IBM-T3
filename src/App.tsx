@@ -1,9 +1,10 @@
 import { ProductCard } from './components/molecules/ProductCard/ProductCard';
 import Product1 from './assets/Product1.png';
+import './styles/variables.css';
 
 function App() {
   return (
-    <div style={{ padding: '40px', background: '#f8f9fa' }}>
+    <div style={{ padding: '1rem', background: 'var(--background-color)' }}>
       <ProductCard
         imageSrc={Product1}
         imageAlt="All Natural Style Chicken Meatballs"
