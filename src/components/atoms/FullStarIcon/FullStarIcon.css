@@ -1,5 +1,7 @@
+@import '../../../styles/variables.css';
+
 .full-star-icon {
   display: inline-block;
   vertical-align: middle;
-  color: #d5e400;
+  color: var(--star-color);
 }
