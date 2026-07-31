@@ -1,17 +1,18 @@
 .social-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 9999px;
-  background: var(--brand-green);
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: var(--radius-full);
+  background: var(--color-brand-green);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   flex-shrink: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity var(--transition-base);
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus-visible {
   opacity: 0.85;
 }

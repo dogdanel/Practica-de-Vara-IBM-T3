@@ -1,3 +1,5 @@
-import type { LucideIcon } from 'lucide-react';
+import type { ComponentType } from 'react';
+import type { IconProps } from './components/Icons';
 
-export type IconComponent = LucideIcon;
+/** Any icon from `src/components/Icons`. */
+export type IconComponent = ComponentType<IconProps>;

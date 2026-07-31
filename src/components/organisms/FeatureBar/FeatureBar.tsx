@@ -1,22 +1,35 @@
 import FeatureItem from '../../molecules/FeatureItem/FeatureItem';
+import { IMAGES } from '../../../constants';
+import { useTranslation } from '../../../i18n';
 import './FeatureBar.css';
 
-const features = [
-  { icon: '/icons/best-prices.png', iconAlt: 'Best prices & offers', title: 'Best prices & offers', subtitle: 'Orders $50 or more' },
-  { icon: '/icons/free-delivery.png', iconAlt: 'Free delivery', title: 'Free delivery', subtitle: '24/7 amazing services' },
-  { icon: '/icons/daily-deal.png', iconAlt: 'Great daily deal', title: 'Great daily deal', subtitle: 'When you sign up' },
-  { icon: '/icons/wide-assortment.png', iconAlt: 'Wide assortment', title: 'Wide assortment', subtitle: 'Mega Discounts' },
-  { icon: '/icons/easy-returns.png', iconAlt: 'Easy returns', title: 'Easy returns', subtitle: 'Within 30 days' },
-];
+const FEATURES = [
+  { id: 'bestPrices', icon: IMAGES.features.bestPrices },
+  { id: 'freeDelivery', icon: IMAGES.features.freeDelivery },
+  { id: 'dailyDeal', icon: IMAGES.features.dailyDeal },
+  { id: 'wideAssortment', icon: IMAGES.features.wideAssortment },
+  { id: 'easyReturns', icon: IMAGES.features.easyReturns },
+] as const;
 
 export default function FeatureBar() {
+  const { t } = useTranslation();
+
   return (
     <div className="feature-bar">
-      {features.map((feature) => (
-        <div key={feature.title} className="feature-bar__item">
-          <FeatureItem {...feature} />
-        </div>
-      ))}
+      {FEATURES.map((feature) => {
+        const title = t(`features.${feature.id}.title`);
+
+        return (
+          <div key={feature.id} className="feature-bar__item">
+            <FeatureItem
+              icon={feature.icon}
+              iconAlt={title}
+              title={title}
+              subtitle={t(`features.${feature.id}.subtitle`)}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 }

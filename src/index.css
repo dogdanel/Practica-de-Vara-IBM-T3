@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-body);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }

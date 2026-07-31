@@ -8,9 +8,9 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__container" style={{ maxWidth: '1912px' }}>
+      <div className="footer__container">
         <FeatureBar />
-        <div className="footer__main" style={{ maxWidth: '1610px', minHeight: '433.39px' }}>
+        <div className="footer__main">
           <FooterBrand />
           <FooterLinksGrid />
           <FooterAppInstall />

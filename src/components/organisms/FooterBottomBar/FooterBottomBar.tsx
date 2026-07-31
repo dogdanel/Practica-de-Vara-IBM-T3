@@ -1,33 +1,37 @@
 import PhoneItem from '../../molecules/PhoneItem/PhoneItem';
 import SocialIcon, { type SocialPlatform } from '../../atoms/SocialIcon/SocialIcon';
+import { CONTACT } from '../../../constants';
+import { useTranslation } from '../../../i18n';
 import './FooterBottomBar.css';
 
-const socialLinks: SocialPlatform[] = ['facebook', 'twitter', 'skype', 'instagram'];
+const SOCIAL_PLATFORMS: SocialPlatform[] = ['facebook', 'twitter', 'skype', 'instagram'];
 
 export default function FooterBottomBar() {
+  const { t } = useTranslation();
+
   return (
     <div className="footer-bottom-bar">
       <p className="footer-bottom-bar__copyright">
-        © {new Date().getFullYear()}, Nest – WordPress Ecommerce Template
+        {t('footer.bottomBar.copyright', { year: new Date().getFullYear() })}
         <br />
-        All rights reserved
+        {t('footer.bottomBar.rightsReserved')}
       </p>
 
       <div className="footer-bottom-bar__phones">
-        <PhoneItem number="1900646666" label="Working 8:00 - 22:00" />
-        <PhoneItem number="1900648888" label="24/7 Support Center" />
+        <PhoneItem number={CONTACT.phonePrimary} label={t('footer.bottomBar.workingHours')} />
+        <PhoneItem number={CONTACT.phoneSecondary} label={t('footer.bottomBar.supportCenter')} />
       </div>
 
       <div className="footer-bottom-bar__social">
         <div className="footer-bottom-bar__social-row">
-          <span className="footer-bottom-bar__social-label">Follow Us</span>
+          <span className="footer-bottom-bar__social-label">{t('common.followUs')}</span>
           <div className="footer-bottom-bar__social-icons">
-            {socialLinks.map((platform) => (
+            {SOCIAL_PLATFORMS.map((platform) => (
               <SocialIcon key={platform} platform={platform} />
             ))}
           </div>
         </div>
-        <p className="footer-bottom-bar__discount">Up to 15% discount on your first subscribe</p>
+        <p className="footer-bottom-bar__discount">{t('footer.bottomBar.discount')}</p>
       </div>
     </div>
   );

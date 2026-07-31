@@ -1,37 +1,30 @@
 import Heading from '../../atoms/Heading/Heading';
 import FooterLink from '../../atoms/FooterLink/FooterLink';
+import { useTranslation } from '../../../i18n';
 import './FooterColumn.css';
 
-interface FooterColumnLink {
-  label: string;
+export interface FooterColumnLink {
+  /** Translation key resolved by the i18n provider. */
+  labelKey: string;
   href?: string;
 }
 
 interface FooterColumnProps {
-  title: string;
+  titleKey: string;
   links: FooterColumnLink[];
-  titleWidth?: number;
-  titleHeight?: number;
 }
 
-export default function FooterColumn({
-  title,
-  links,
-  titleWidth,
-  titleHeight,
-}: FooterColumnProps) {
-  const width = titleWidth ?? 207.3;
+export default function FooterColumn({ titleKey, links }: FooterColumnProps) {
+  const { t } = useTranslation();
 
   return (
-    <div className="footer-column" style={{ width: `${width}px` }}>
-      <Heading className="heading--no-margin" width={titleWidth} height={titleHeight}>
-        {title}
-      </Heading>
+    <div className="footer-column">
+      <Heading className="heading--no-margin">{t(titleKey)}</Heading>
 
-      <div className="footer-column__links" style={{ width: `${width}px` }}>
+      <div className="footer-column__links">
         {links.map((link) => (
-          <FooterLink key={link.label} href={link.href}>
-            {link.label}
+          <FooterLink key={link.labelKey} href={link.href}>
+            {t(link.labelKey)}
           </FooterLink>
         ))}
       </div>

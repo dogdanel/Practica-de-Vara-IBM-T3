@@ -6,23 +6,24 @@
   flex-shrink: 0;
 }
 
-@media (min-width: 1024px) {
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
   .footer-app-install {
-    width: 318.75px;
+    width: var(--footer-side-column-width);
   }
 }
 
 .footer-app-install__label {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
 }
 
 .footer-app-install__label--spaced {
-  margin-bottom: 0.75rem;
-  margin-top: 2rem;
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-2xl);
 }
 
 .footer-app-install__payments-img {
   max-width: 100%;
-  height: 28px;
+  height: 1.75rem;
   width: auto;
 }

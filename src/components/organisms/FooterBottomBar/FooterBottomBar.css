@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1.5rem;
-  border-top: 1px solid var(--border-light);
-  padding-top: 1.5rem;
+  gap: var(--space-xl);
+  border-top: 0.0625rem solid var(--color-border-light);
+  padding-top: var(--space-xl);
 }
 
-@media (min-width: 1024px) {
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
   .footer-bottom-bar {
     flex-direction: row;
     align-items: center;
@@ -16,64 +17,62 @@
   }
 }
 
-.footer-bottom-bar__copyright {
+.footer-bottom-bar__copyright,
+.footer-bottom-bar__discount {
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--brand-gray);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-loose);
+  color: var(--color-brand-gray);
   margin: 0;
 }
 
-/* ---- phone numbers ---- */
+.footer-bottom-bar__discount {
+  text-align: left;
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .footer-bottom-bar__discount {
+    text-align: right;
+  }
+}
 
 .footer-bottom-bar__phones {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1.75rem;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
-/* ---- social + discount ---- */
+/* --breakpoint-sm: 40rem */
+@media (min-width: 40rem) {
+  .footer-bottom-bar__phones {
+    flex-direction: row;
+    gap: var(--space-2xl);
+  }
+}
 
 .footer-bottom-bar__social {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  margin-left: auto;
-}
-
-@media (min-width: 1024px) {
-  .footer-bottom-bar__social {
-    align-items: flex-end;
-  }
+  gap: var(--space-xs);
 }
 
 .footer-bottom-bar__social-row {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-sm);
 }
 
 .footer-bottom-bar__social-label {
   font-family: var(--font-heading);
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--brand-dark);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-brand-dark);
   white-space: nowrap;
 }
 
 .footer-bottom-bar__social-icons {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.footer-bottom-bar__discount {
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--brand-gray);
-  margin: 0;
-  text-align: right;
+  gap: var(--space-xs);
 }

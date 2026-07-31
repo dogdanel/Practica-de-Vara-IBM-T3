@@ -1,17 +1,21 @@
+import { useTranslation } from '../../../i18n';
 import './SubscribeForm.css';
 
 export default function SubscribeForm() {
+  const { t } = useTranslation();
+  const placeholder = t('hero.subscribe.placeholder');
+
   return (
-    <form className="subscribe-form" onSubmit={(e) => e.preventDefault()}>
+    <form className="subscribe-form" onSubmit={(event) => event.preventDefault()}>
       <input
         type="email"
         required
-        placeholder="Your email address"
+        placeholder={placeholder}
         className="subscribe-form__input"
-        aria-label="Your email address"
+        aria-label={placeholder}
       />
       <button type="submit" className="subscribe-form__button">
-        Subscribe
+        {t('hero.subscribe.submit')}
       </button>
     </form>
   );

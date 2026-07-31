@@ -1,6 +1,6 @@
 .app-download-buttons {
   display: flex;
-  gap: 0.75rem;
+  gap: var(--space-sm);
 }
 
 .app-download-buttons__link {
@@ -9,8 +9,8 @@
 }
 
 .app-download-buttons__badge {
-  height: 40px;
+  height: 2.5rem;
   width: auto;
   display: block;
-  border-radius: 0.375rem;
+  border-radius: var(--radius-sm);
 }

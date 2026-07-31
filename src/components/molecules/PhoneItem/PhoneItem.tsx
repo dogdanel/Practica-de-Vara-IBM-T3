@@ -1,4 +1,5 @@
-import { Phone } from 'lucide-react';
+import { PhoneIcon } from '../../Icons';
+import { ICON_SIZES } from '../../../constants';
 import './PhoneItem.css';
 
 interface PhoneItemProps {
@@ -8,9 +9,10 @@ interface PhoneItemProps {
 
 export default function PhoneItem({ number, label }: PhoneItemProps) {
   const tel = number.replace(/\s+/g, '');
+
   return (
     <div className="phone-item">
-      <Phone size={26} className="phone-item__icon" />
+      <PhoneIcon size={ICON_SIZES.lg} className="phone-item__icon" />
       <div className="phone-item__content">
         <a href={`tel:${tel}`} className="phone-item__number">
           {number}

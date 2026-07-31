@@ -1,81 +1,74 @@
-import FooterColumn from '../../molecules/FooterColumn/FooterColumn';
+import FooterColumn, {
+  type FooterColumnLink,
+} from '../../molecules/FooterColumn/FooterColumn';
 import './FooterLinksGrid.css';
 
-const columns = [
+interface FooterColumnConfig {
+  id: string;
+  titleKey: string;
+  links: FooterColumnLink[];
+}
+
+const COLUMNS: FooterColumnConfig[] = [
   {
-    title: 'Company',
-    headingWidth: 207.3,
-    headingHeight: 29,
+    id: 'company',
+    titleKey: 'footer.columns.company.title',
     links: [
-      { label: 'About Us' },
-      { label: 'Delivery Information' },
-      { label: 'Privacy Policy' },
-      { label: 'Terms & Conditions' },
-      { label: 'Contact Us' },
-      { label: 'Support Center' },
-      { label: 'Careers' },
-    ],
+      'aboutUs',
+      'deliveryInformation',
+      'privacyPolicy',
+      'termsAndConditions',
+      'contactUs',
+      'supportCenter',
+      'careers',
+    ].map((key) => ({ labelKey: `footer.columns.company.links.${key}` })),
   },
   {
-    title: 'Account',
-    headingWidth: 212.05,
-    headingHeight: 29,
+    id: 'account',
+    titleKey: 'footer.columns.account.title',
     links: [
-      { label: 'Sign In' },
-      { label: 'View Cart' },
-      { label: 'My Wishlist' },
-      { label: 'Track My Order' },
-      { label: 'Help Ticket' },
-      { label: 'Shipping Details' },
-      { label: 'Compare products' },
-    ],
+      'signIn',
+      'viewCart',
+      'myWishlist',
+      'trackMyOrder',
+      'helpTicket',
+      'shippingDetails',
+      'compareProducts',
+    ].map((key) => ({ labelKey: `footer.columns.account.links.${key}` })),
   },
   {
-    title: 'Corporate',
-    headingWidth: 204.06,
-    headingHeight: 29,
+    id: 'corporate',
+    titleKey: 'footer.columns.corporate.title',
     links: [
-      { label: 'Become a Vendor' },
-      { label: 'Affiliate Program' },
-      { label: 'Farm Business' },
-      { label: 'Farm Careers' },
-      { label: 'Our Suppliers' },
-      { label: 'Accessibility' },
-      { label: 'Promotions' },
-    ],
+      'becomeAVendor',
+      'affiliateProgram',
+      'farmBusiness',
+      'farmCareers',
+      'ourSuppliers',
+      'accessibility',
+      'promotions',
+    ].map((key) => ({ labelKey: `footer.columns.corporate.links.${key}` })),
   },
   {
-    title: 'Popular',
-    headingWidth: 223.14,
-    headingHeight: 29,
+    id: 'popular',
+    titleKey: 'footer.columns.popular.title',
     links: [
-      { label: 'Milk & Flavoured Milk' },
-      { label: 'Butter and Margarine' },
-      { label: 'Eggs Substitutes' },
-      { label: 'Marmalades' },
-      { label: 'Sour Cream and Dips' },
-      { label: 'Tea & Kombucha' },
-      { label: 'Cheese' },
-    ],
+      'milk',
+      'butter',
+      'eggs',
+      'marmalades',
+      'sourCream',
+      'tea',
+      'cheese',
+    ].map((key) => ({ labelKey: `footer.columns.popular.links.${key}` })),
   },
 ];
 
 export default function FooterLinksGrid() {
   return (
-    <div
-      className="footer-links-grid"
-      style={{
-        gridTemplateColumns: columns.map((c) => `${c.headingWidth}px`).join(' '),
-      }}
-    >
-      {columns.map((column) => (
-        <FooterColumn
-          key={column.title}
-          title={column.title}
-          links={column.links}
-          titleWidth={column.headingWidth}
-          titleHeight={column.headingHeight}
-        />
+    <div className="footer-links-grid">
+      {COLUMNS.map((column) => (
+        <FooterColumn key={column.id} titleKey={column.titleKey} links={column.links} />
       ))}
     </div>
   );

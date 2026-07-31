@@ -1,19 +1,15 @@
 .footer-link {
   display: block;
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  vertical-align: middle;
-  color: var(--brand-dark);
-  transition: color 0.2s ease;
-  width: 207.3px;
-  height: 24px;
-  line-height: 24px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-brand-dark);
+  transition: color var(--transition-base);
   text-decoration: none;
 }
 
-.footer-link:hover {
-  color: var(--brand-green);
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--color-brand-green);
 }

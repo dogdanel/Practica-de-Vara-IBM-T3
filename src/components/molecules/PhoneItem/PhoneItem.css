@@ -1,11 +1,11 @@
 .phone-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-sm);
 }
 
 .phone-item__icon {
-  color: var(--brand-green);
+  color: var(--color-brand-green);
   flex-shrink: 0;
 }
 
@@ -16,16 +16,16 @@
 
 .phone-item__number {
   font-family: var(--font-heading);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 26px;
-  color: var(--brand-green);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-brand-green);
   text-decoration: none;
 }
 
 .phone-item__label {
   font-family: var(--font-body);
-  font-size: 12px;
-  letter-spacing: 0.9px;
-  color: var(--brand-gray);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05625rem;
+  color: var(--color-brand-gray);
 }

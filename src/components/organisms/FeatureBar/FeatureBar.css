@@ -1,23 +1,25 @@
 .feature-bar {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: var(--space-md);
 }
 
-@media (min-width: 640px) {
+/* --breakpoint-sm: 40rem (see src/constants/breakpoints.ts) */
+@media (min-width: 40rem) {
   .feature-bar {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
   .feature-bar {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 .feature-bar__item {
-  border-radius: 0.625rem;
-  background: #f4f6fa;
-  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+  padding: var(--space-lg);
 }
