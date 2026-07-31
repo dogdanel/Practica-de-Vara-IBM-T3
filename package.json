@@ -1,15 +1,15 @@
 {
-  "name": "practica-de-vara-ibm-t3",
+  "name": "product-card",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "i18next": "^26.3.6",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -23,5 +23,16 @@
     "oxlint": "^1.75.0",
     "typescript": "~6.0.2",
     "vite": "^8.1.1"
+=======
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0"
+>>>>>>> 6a8f47b (Add popular products grid with design tokens, rem units, grouped icons and i18n)
   }
 }

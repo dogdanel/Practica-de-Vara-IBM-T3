@@ -1,0 +1,90 @@
+/**
+ * CSS mirror of the TypeScript constants in `src/constants`.
+ * Never hardcode a colour, font-size or breakpoint anywhere else.
+ * All sizes are expressed in rem (base font-size: 16px).
+ */
+:root {
+  /* Colors -> src/constants/colors.ts */
+  --color-white: #ffffff;
+  --color-primary: #3bb77e;
+  --color-primary-dark: #25ab71;
+  --color-primary-darker: #29a56c;
+  --color-primary-soft: #def9ec;
+  --color-info: #67bcee;
+  --color-danger: #f74b81;
+  --color-star-filled: #d5e400;
+  --color-star-empty: #888888;
+  --color-text-primary: #253d4e;
+  --color-text-muted: #adadad;
+  --color-text-subtle: #b6b6b6;
+  --color-text-secondary: #6c757d;
+  --color-border: #ececec;
+
+  /* Typography -> src/constants/typography.ts */
+  --font-family-heading: Quicksand, Arial, sans-serif;
+  --font-family-body: Lato, Arial, sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 2rem;
+
+  --line-height-xs: 0.875rem;
+  --line-height-sm: 1.1875rem;
+  --line-height-md: 1.5rem;
+  --line-height-lg: 1.625rem;
+  --line-height-xl: 1.875rem;
+  --line-height-body: 1.4;
+  --line-height-none: 1;
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing scale */
+  --spacing-3xs: 0.125rem;
+  --spacing-2xs: 0.25rem;
+  --spacing-xs: 0.375rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.625rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.25rem;
+  --spacing-2xl: 1.5rem;
+  --spacing-3xl: 1.5625rem;
+  --spacing-4xl: 1.875rem;
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 0.9375rem;
+  --radius-xl: 1.25rem;
+
+  /* Component sizes */
+  --icon-size-star: 0.875rem;
+  --icon-size-cart: 1rem;
+  --icon-size-default: 1.25rem;
+  --size-card-height: 25.75rem;
+  --size-card-image-height: 12.9375rem;
+  --size-card-image-inner-height: 11.375rem;
+  --size-card-title-height: 2.4375rem;
+  --size-button-width: 4.75rem;
+  --size-button-height: 2.25rem;
+  --size-badge-height: 2rem;
+  --size-badge-min-width: 3.75rem;
+  --size-row-height: 1.625rem;
+  --size-page-max-width: 79.25rem;
+  --size-header-min-height: 3.125rem;
+
+  /* Motion */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-base: 0.2s ease;
+
+  /* Breakpoints -> src/constants/breakpoints.ts (media queries live in responsive.css) */
+  --breakpoint-xs: 27.5rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 47.5rem;
+  --breakpoint-lg: 56.25rem;
+  --breakpoint-xl: 65.625rem;
+  --breakpoint-xxl: 82.25rem;
+}

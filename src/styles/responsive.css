@@ -1,0 +1,61 @@
+/**
+ * All responsive rules of the app in one place, so each breakpoint value
+ * from `src/constants/breakpoints.ts` appears exactly once.
+ */
+
+/* --breakpoint-xxl: 82.25rem */
+@media (max-width: 82.25rem) {
+  .shop-page {
+    padding: 0 var(--spacing-2xl);
+  }
+}
+
+/* --breakpoint-xl: 65.625rem */
+@media (max-width: 65.625rem) {
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* --breakpoint-lg: 56.25rem */
+@media (max-width: 56.25rem) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* --breakpoint-md: 47.5rem */
+@media (max-width: 47.5rem) {
+  .shop-page__header {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .shop-page__title {
+    width: auto;
+  }
+
+  .shop-page__filters {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* --breakpoint-sm: 40rem */
+@media (max-width: 40rem) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-card {
+    min-width: 0;
+  }
+}
+
+/* --breakpoint-xs: 27.5rem */
+@media (max-width: 27.5rem) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

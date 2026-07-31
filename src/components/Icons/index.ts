@@ -1,3 +1,4 @@
-export * from './CartIcon/CartIcon';
-export * from './FullStarIcon/FullStarIcon';
-export * from './EmptyStarIcon/EmptyStarIcon';
+export { CartIcon } from './CartIcon/CartIcon';
+export { EmptyStarIcon } from './EmptyStarIcon/EmptyStarIcon';
+export { FullStarIcon } from './FullStarIcon/FullStarIcon';
+export type { IconProps } from './types';
