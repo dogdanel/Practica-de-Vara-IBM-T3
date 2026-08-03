@@ -1,6 +1,7 @@
 import React from 'react';
 import './CategoryText.css';
 
+
 export interface CategoryTextProps {
   children: React.ReactNode;
   className?: string;

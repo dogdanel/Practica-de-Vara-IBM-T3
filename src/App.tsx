@@ -2,10 +2,12 @@
 import { ProductCard } from './components/molecules/ProductCard/ProductCard';
 import Product1 from './assets/Product1.png';
 import './styles/variables.css';
+import React from 'react';
+import { CategoryMenu } from './components/organisms/CategoryMenu/CategoryMenu';
 
-function App() {
+export const App: React.FC = () => {
   return (
-    <div style={{ padding: '1rem', background: 'var(--background-color)' }}>
+    <div style={{ padding: '1rem', background: 'var(--background)' }}>
       <ProductCard
         imageSrc={Product1}
         imageAlt="All Natural Style Chicken Meatballs"
@@ -20,19 +22,9 @@ function App() {
         badgeVariant="discount"
         badgePosition="left"
       />
-    </div>
-  );
-}
-
-import React from 'react';
-import { CategoryMenu } from './organisms/CategoryMenu/CategoryMenu';
-
-export const App: React.FC = () => {
-  return (
-    <div style={{ padding: '40px' }}>
       <CategoryMenu />
     </div>
+    
   );
-};
-
+}
 export default App;

@@ -1,0 +1,18 @@
+@import '../../../styles/variables.css';
+
+.category-menu {
+  width: 100%;
+  max-width: 16rem;
+  padding: 1rem;
+  border: 0.1rem solid var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+  box-shadow: var(--box-shadow);
+}
+
+.category-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
