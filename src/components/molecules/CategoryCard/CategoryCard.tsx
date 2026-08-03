@@ -3,7 +3,6 @@ import { CategoryIcon } from '../../atoms/CategoryIcon/CategoryIcon';
 import { CategoryText } from '../../atoms/CategoryText/CategoryText';
 import { CountBadge } from '../../atoms/CountBadge/CountBadge';
 import './CategoryCard.css';
-
 export interface CategoryCardProps {
   icon: string;
   title: string;

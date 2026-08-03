@@ -1,7 +1,7 @@
 import { ShopPage } from './components/templates/ShopPage/ShopPage';
 import { I18nProvider } from './i18n';
 
-function App() {
+export const App: React.FC = () => {
   return (
     <I18nProvider>
       <ShopPage />
