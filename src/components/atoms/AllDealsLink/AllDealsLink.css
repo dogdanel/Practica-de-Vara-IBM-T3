@@ -1,0 +1,20 @@
+@import '../../../styles/variables.css';
+
+.all-deals-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--brand-green);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.all-deals-link:hover {
+  color: var(--brand-dark);
+}
+
+.all-deals-link__arrow {
+  font-size: 0.75rem;
+}
