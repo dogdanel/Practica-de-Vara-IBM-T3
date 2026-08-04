@@ -29,6 +29,7 @@
   padding: 1rem 1.25rem;
   background-color: var(--background);
   border-radius: 0.75rem;
+  border: 0.1rem solid var(--border);
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;

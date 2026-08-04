@@ -31,7 +31,7 @@ function App() {
             title: "Organic Cage Grade A Large Eggs",
             price: "$21.00",
             oldPrice: "$24.99",
-            brand: "Hambger Hell",
+            brand: "Hambger Hel",
           }
         ]}
       />

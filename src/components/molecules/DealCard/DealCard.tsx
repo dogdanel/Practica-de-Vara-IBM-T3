@@ -35,8 +35,8 @@ export const DealCard: React.FC<DealCardProps> = ({
         <h4 className="deal-card__title">{title}</h4>
 
         <div className="deal-card__brand-info">
-          <span className="deal-card__by-text">{t('productCard.by', 'By')}</span>
-          <span className="deal-card__brand-name">{brand}</span>
+          <span className="deal-card__by-text"></span>
+          {t('product.by')} <span className="deal-card__brand-name">{brand}</span>
         </div>
 
         <div className="deal-card__footer">

@@ -40,7 +40,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   badgePosition = 'left',
   onAddToCart,
 }) => { 
-  const { t } = useTranslation(); // 2. Inițializare hook
+  const { t } = useTranslation();
 
   const renderStars = () => {
     const stars: ReactNode[] = [];

@@ -10,7 +10,7 @@ interface AddToCartButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
-  label,
+  label = 'product.add',
   className = '',
   ...props
 }) => {
@@ -20,7 +20,7 @@ export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
     <button className={`add-to-cart-btn ${className}`.trim()} {...props}>
       <CartIcon size={16} className="add-to-cart-btn__icon" />
       <span className="add-to-cart-btn__text">
-        {label ?? t('product.add')}
+        {t(label)}
       </span>
     </button>
   );
