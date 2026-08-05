@@ -1,4 +1,3 @@
-// src/components/organisms/DealsSection/DealsSection.tsx
 import React from 'react';
 import { DealsSectionHeader } from '../../molecules/DealsSectionHeader/DealsSectionHeader';
 import { DealCard} from '../../molecules/DealCard/DealCard';
