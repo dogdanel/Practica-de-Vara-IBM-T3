@@ -12,6 +12,7 @@
   --color-heading: #253d4e;
   --color-text: #7e7e7e;
   --color-text-soft: #adadad;
+  --color-placeholder: #838383;
 
   /* ---- Colors: surfaces & lines ---- */
   --color-white: #fff;
@@ -29,12 +30,20 @@
   /* ---- Colors: banner backdrop ---- */
   --color-banner-bg: #f4f6f8;
 
+  /* ---- Banner: sizes from the Figma frame (1920 wide) ---- */
+  --banner-min-height: 33.625rem; /* 538px */
+  --banner-padding-block: 6.15625rem; /* 98.5px */
+  --banner-padding-inline: 6.25rem; /* 100px */
+  --fs-banner-title: 4.5rem; /* 72px */
+  --fs-banner-subtitle: 1.875rem; /* 30px */
+
   /* ---- Shadows ---- */
   --shadow-sm: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.06);
   --shadow-md: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 
   /* ---- Typography ---- */
   --font-sans: 'Quicksand', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Lato', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   --fs-3xs: 0.5625rem;
   --fs-2xs: 0.625rem;
@@ -49,6 +58,7 @@
   --fs-4xl: 3.5rem;
 
   --fw-regular: 400;
+  --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
 
@@ -56,6 +66,7 @@
   --radius-sm: 0.5rem; /* 8px */
   --radius: 0.25rem; /* 4px */
   --radius-pill: 1.875rem; /* 30px */
+  --radius-pill-lg: 3.125rem; /* 50px */
 
   /* ---- Layout ---- */
   --container: 75rem; /* 1200px */
