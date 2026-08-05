@@ -1,6 +1,9 @@
 import { ProductCard } from './components/molecules/ProductCard/ProductCard';
 import Product1 from './assets/Product1.png';
 import OrganicEggs from './assets/OrganicEggs.png';
+import Vanilla from './assets/Vanilla.png';
+import OrganicMelon from './assets/OrganicMelon.png';
+import Coffee from './assets/Coffee.png';
 import './styles/variables.css';
 import { DealsSection } from './components/organisms/DealsSection/DealsSection';
 
@@ -32,7 +35,32 @@ function App() {
             price: "$21.00",
             oldPrice: "$24.99",
             brand: "Hambger Hel",
+          },
+          {
+            id: 2,
+            imageSrc: Vanilla,
+            title: "Naturally Flavored Cinnamon Vanilla",
+            price: "$51.00",
+            oldPrice: "$55.00",
+            brand: "Hambger Hel",
+          },
+          {
+            id: 3,
+            imageSrc: OrganicMelon,
+            title: "Seed of Change Organic Watermelon",
+            price: "$61.50",
+            oldPrice: "$66.80",
+            brand: "Hambger Hel",
+          },
+          {
+            id: 4,
+            imageSrc: Coffee,
+            title: " Nestle Coffee Mate Coffee Creamer",
+            price: "$52.80",
+            oldPrice: "$53.80",
+            brand: "Totino's Pizza",
           }
+
         ]}
       />
     </div>
