@@ -23,7 +23,7 @@ export const DealCard: React.FC<DealCardProps> = ({
   onAddToCart,
   className = '',
 }) => {
-  const { t } = useTranslation();
+  const { t:translate } = useTranslation();
 
   return (
     <div className={`deal-card ${className}`.trim()}>
@@ -36,7 +36,7 @@ export const DealCard: React.FC<DealCardProps> = ({
 
         <div className="deal-card__brand-info">
           <span className="deal-card__by-text"></span>
-          {t('product.by')} <span className="deal-card__brand-name">{brand}</span>
+          {translate('product.by')} <span className="deal-card__brand-name">{brand}</span>
         </div>
 
         <div className="deal-card__footer">

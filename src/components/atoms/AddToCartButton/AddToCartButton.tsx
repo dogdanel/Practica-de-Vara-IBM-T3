@@ -14,13 +14,13 @@ export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const { t } = useTranslation();
+  const { t:translate } = useTranslation();
 
   return (
     <button className={`add-to-cart-btn ${className}`.trim()} {...props}>
       <CartIcon size={16} className="add-to-cart-btn__icon" />
       <span className="add-to-cart-btn__text">
-        {t(label)}
+        {translate(label)}
       </span>
     </button>
   );

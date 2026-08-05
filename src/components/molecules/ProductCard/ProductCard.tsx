@@ -40,7 +40,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   badgePosition = 'left',
   onAddToCart,
 }) => { 
-  const { t } = useTranslation();
+  const { t:translate } = useTranslation();
 
   const renderStars = () => {
     const stars: ReactNode[] = [];
@@ -86,7 +86,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         <div className="product-card__brand-info">
           <ProductText variant="brand" as="span">
-            {t('product.by')} <span className="product-card__brand-name">{brand}</span>
+            {translate('product.by')} <span className="product-card__brand-name">{brand}</span>
           </ProductText>
         </div>
 
