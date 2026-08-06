@@ -13,6 +13,16 @@
   padding-bottom: 0.5rem;
 }
 
+.category-header-SBCM__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin: 0;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+
 .category-header__title::after {
   content: '';
   position: absolute;
