@@ -1,0 +1,30 @@
+@import '../../../styles/variables.css';
+
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--background);
+  line-height: 1;
+}
+
+.product-badge--left {
+  border-top-left-radius: 0.75rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.product-badge--right {
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.product-badge--discount {
+  background-color: var(--brand-green);
+}
+
+.product-badge--sale {
+  background-color: var(--brand-dark);
+}

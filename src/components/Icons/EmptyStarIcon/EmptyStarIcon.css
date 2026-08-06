@@ -1,0 +1,7 @@
+@import '../../../styles/variables.css';
+
+.empty-star-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--brand-gray);
+}
