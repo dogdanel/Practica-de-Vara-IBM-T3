@@ -3,9 +3,7 @@ import { ProductCard } from './components/molecules/ProductCard/ProductCard';
 import Product1 from './assets/Product1.png';
 import './styles/variables.css';
 import { CategoryMenu } from './components/organisms/CategoryMenu/CategoryMenu';
-import { CategoryCard } from './molecules/CategoryCard/CategoryCard';
-import BakingMaterial from '../public/CategoryIcons/BakingMaterial.png';
-import { ShopByCategoryMenu } from './organisms/ShopByCategoryMenu/ShopByCategoryMenu';
+import { ShopByCategoryMenu } from './components/organisms/ShopByCategoryMenu/ShopByCategoryMenu';
 
 export const App: React.FC = () => {
   return (
@@ -25,11 +23,6 @@ export const App: React.FC = () => {
         badgePosition="left"
       />
       <CategoryMenu />
-      <CategoryCard
-        icon={BakingMaterial}
-        title="Baking Material"
-        count={1}
-      />
       <ShopByCategoryMenu />
     </div>
   );

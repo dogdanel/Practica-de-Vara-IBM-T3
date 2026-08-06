@@ -1,31 +1,33 @@
+@import '../../../styles/variables.css';
+
 .shop-by-category {
   width: 100%;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .shop-by-category__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .shop-by-category__title-group {
   display: flex;
   align-items: baseline;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .shop-by-category__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #253d4e;
+  color: var(--brand-dark);
   margin: 0;
 }
 
 .shop-by-category__link {
-  font-size: 14px;
-  color: #3bb77e;
+  font-size: 0.875rem;
+  color: var(--brand-green);
   text-decoration: none;
   font-weight: 500;
 }
@@ -36,10 +38,10 @@
 
 .shop-by-category__list {
   display: flex;
-  gap: 18px;
+  gap: 1.25rem;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
