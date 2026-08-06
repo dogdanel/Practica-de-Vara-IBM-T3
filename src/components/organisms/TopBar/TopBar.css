@@ -1,0 +1,40 @@
+.top-bar {
+  border-bottom: var(--hairline) solid var(--color-border);
+  background: var(--color-white);
+}
+
+.top-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-height: 2.5rem;
+}
+
+.top-bar__notice {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--color-green);
+}
+
+.top-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.top-bar__help {
+  font-size: var(--fs-sm);
+}
+
+.top-bar__help a {
+  font-weight: var(--fw-bold);
+  color: var(--color-green);
+}
+
+@media (max-width: 61.9375rem) {
+  .top-bar__notice,
+  .top-bar__help {
+    display: none;
+  }
+}

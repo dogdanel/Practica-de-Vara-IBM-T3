@@ -1,0 +1,26 @@
+.support-info {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.support-info__icon {
+  color: var(--color-heading);
+}
+
+.support-info__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.support-info__phone {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-green);
+}
+
+.support-info__note {
+  font-size: var(--fs-xs);
+  color: var(--color-text);
+}

@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Quicksand:wght@600;700&display=swap');
 @import './styles/tokens.css';
-@import './styles/responsive.css';
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  color: var(--color-text);
+  background: var(--color-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 * {
   box-sizing: border-box;
@@ -13,10 +23,41 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-family-body);
-  background: var(--color-white);
+  font: var(--fw-regular) var(--fs-base) / 1.5 var(--font-sans);
 }
 
-#root {
-  min-height: 100vh;
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--color-heading);
+  font-weight: var(--fw-bold);
 }
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+

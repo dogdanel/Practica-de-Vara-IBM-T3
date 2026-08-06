@@ -1,90 +1,75 @@
-/**
- * CSS mirror of the TypeScript constants in `src/constants`.
- * Never hardcode a colour, font-size or breakpoint anywhere else.
- * All sizes are expressed in rem (base font-size: 16px).
- */
+
+
 :root {
-  /* Colors -> src/constants/colors.ts */
-  --color-white: #ffffff;
-  --color-primary: #3bb77e;
-  --color-primary-dark: #25ab71;
-  --color-primary-darker: #29a56c;
-  --color-primary-soft: #def9ec;
-  --color-info: #67bcee;
-  --color-danger: #f74b81;
-  --color-star-filled: #d5e400;
-  --color-star-empty: #888888;
-  --color-text-primary: #253d4e;
-  --color-text-muted: #adadad;
-  --color-text-subtle: #b6b6b6;
-  --color-text-secondary: #6c757d;
+  /* ---- Colors: brand ---- */
+  --color-green: #3bb77e;
+  --color-green-dark: #29a56c;
+  --color-green-light: #def9ec;
+  /* channel form of --color-green, for rgba() gradients */
+  --color-green-rgb: 59, 183, 126;
+
+  /* ---- Colors: text ---- */
+  --color-heading: #253d4e;
+  --color-text: #7e7e7e;
+  --color-text-soft: #adadad;
+  --color-placeholder: #838383;
+
+  /* ---- Colors: surfaces & lines ---- */
+  --color-white: #fff;
+  --color-bg: #fff;
   --color-border: #ececec;
+  --color-border-soft: #f2f3f4;
 
-  /* Typography -> src/constants/typography.ts */
-  --font-family-heading: Quicksand, Arial, sans-serif;
-  --font-family-body: Lato, Arial, sans-serif;
+  /* ---- Colors: logo mark ---- */
+  --color-logo-leaf: #8fd6b0;
+  --color-logo-yellow: #f2b705;
+  --color-logo-orange: #f28705;
+  --color-logo-yellow-rgb: 242, 183, 5;
+  --color-logo-orange-rgb: 242, 135, 5;
 
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 2rem;
+  /* ---- Colors: banner backdrop ---- */
+  --color-banner-bg: #f4f6f8;
 
-  --line-height-xs: 0.875rem;
-  --line-height-sm: 1.1875rem;
-  --line-height-md: 1.5rem;
-  --line-height-lg: 1.625rem;
-  --line-height-xl: 1.875rem;
-  --line-height-body: 1.4;
-  --line-height-none: 1;
+  /* ---- Banner: sizes from the Figma frame (1920 wide) ---- */
+  --banner-min-height: 33.625rem; /* 538px */
+  --banner-padding-block: 6.15625rem; /* 98.5px */
+  --banner-padding-inline: 6.25rem; /* 100px */
+  --fs-banner-title: 4.5rem; /* 72px */
+  --fs-banner-subtitle: 1.875rem; /* 30px */
 
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 
-  /* Spacing scale */
-  --spacing-3xs: 0.125rem;
-  --spacing-2xs: 0.25rem;
-  --spacing-xs: 0.375rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 0.625rem;
-  --spacing-lg: 1rem;
-  --spacing-xl: 1.25rem;
-  --spacing-2xl: 1.5rem;
-  --spacing-3xl: 1.5625rem;
-  --spacing-4xl: 1.875rem;
+  /* ---- Typography ---- */
+  --font-sans: 'Quicksand', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Lato', system-ui, 'Segoe UI', Roboto, sans-serif;
 
-  /* Radii */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.875rem;
-  --radius-lg: 0.9375rem;
-  --radius-xl: 1.25rem;
+  --fs-3xs: 0.5625rem;
+  --fs-2xs: 0.625rem;
+  --fs-xs: 0.6875rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.875rem;
+  --fs-md: 0.9375rem;
+  --fs-lg: 1rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.375rem;
+  --fs-3xl: 2.125rem;
+  --fs-4xl: 3.5rem;
 
-  /* Component sizes */
-  --icon-size-star: 0.875rem;
-  --icon-size-cart: 1rem;
-  --icon-size-default: 1.25rem;
-  --size-card-height: 25.75rem;
-  --size-card-image-height: 12.9375rem;
-  --size-card-image-inner-height: 11.375rem;
-  --size-card-title-height: 2.4375rem;
-  --size-button-width: 4.75rem;
-  --size-button-height: 2.25rem;
-  --size-badge-height: 2rem;
-  --size-badge-min-width: 3.75rem;
-  --size-row-height: 1.625rem;
-  --size-page-max-width: 79.25rem;
-  --size-header-min-height: 3.125rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 
-  /* Motion */
-  --transition-fast: 0.2s ease-in-out;
-  --transition-base: 0.2s ease;
+  /* ---- Radii ---- */
+  --radius-sm: 0.5rem; /* 8px */
+  --radius: 0.25rem; /* 4px */
+  --radius-pill: 1.875rem; /* 30px */
+  --radius-pill-lg: 3.125rem; /* 50px */
 
-  /* Breakpoints -> src/constants/breakpoints.ts (media queries live in responsive.css) */
-  --breakpoint-xs: 27.5rem;
-  --breakpoint-sm: 40rem;
-  --breakpoint-md: 47.5rem;
-  --breakpoint-lg: 56.25rem;
-  --breakpoint-xl: 65.625rem;
-  --breakpoint-xxl: 82.25rem;
+  /* ---- Layout ---- */
+  --container: 75rem; /* 1200px */
+  --hairline: 0.0625rem; /* 1px */
+
 }

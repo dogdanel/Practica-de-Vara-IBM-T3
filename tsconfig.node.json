@@ -4,12 +4,17 @@
     "lib": ["ES2023"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "moduleResolution": "Bundler",
+
+    "module": "nodenext",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "strict": true
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["vite.config.ts"]
 }
