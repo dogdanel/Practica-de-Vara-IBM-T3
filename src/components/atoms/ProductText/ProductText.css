@@ -64,12 +64,6 @@
 }
 
 .product-text--rating {
-<<<<<<< HEAD
-  font-size: 0.65rem;
-  color: var(--brand-gray);
-}
-=======
   font-size: var(--font-size-xs);
   color: var(--color-text-subtle);
 }
->>>>>>> 6a8f47b (Add popular products grid with design tokens, rem units, grouped icons and i18n)

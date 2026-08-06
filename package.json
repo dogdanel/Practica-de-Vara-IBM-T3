@@ -9,21 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "i18next": "^26.3.6",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "react-i18next": "^17.0.11"
-  },
-  "devDependencies": {
-    "@types/node": "^24.13.3",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.3",
-    "oxlint": "^1.75.0",
-    "typescript": "~6.0.2",
-    "vite": "^8.1.1"
-=======
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -33,6 +18,5 @@
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.5.3",
     "vite": "^5.4.0"
->>>>>>> 6a8f47b (Add popular products grid with design tokens, rem units, grouped icons and i18n)
   }
 }

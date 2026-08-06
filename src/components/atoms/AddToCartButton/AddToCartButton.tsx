@@ -1,15 +1,9 @@
 import React from 'react';
 import type { ButtonHTMLAttributes } from 'react';
-<<<<<<< HEAD
-import { CartIcon } from '../../Icons/CartIcon/CartIcon';
-import './AddToCartButton.css';
-import { useTranslation } from 'react-i18next';
-=======
 import { CartIcon } from '../../Icons';
 import { ICON_SIZES } from '../../../constants';
 import { useTranslation } from '../../../i18n';
 import './AddToCartButton.css';
->>>>>>> 6a8f47b (Add popular products grid with design tokens, rem units, grouped icons and i18n)
 
 interface AddToCartButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
@@ -24,16 +18,6 @@ export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
   const { t } = useTranslation();
 
   return (
-<<<<<<< HEAD
-    <button className={`add-to-cart-btn ${className}`.trim()} {...props}>
-      <CartIcon size={16} className="add-to-cart-btn__icon" />
-      <span className="add-to-cart-btn__text">
-        {label ?? t('product.add')}
-      </span>
-    </button>
-  );
-};
-=======
     <button
       type="button"
       className={`add-to-cart-btn ${className}`.trim()}
@@ -45,4 +29,3 @@ export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
     </button>
   );
 };
->>>>>>> 6a8f47b (Add popular products grid with design tokens, rem units, grouped icons and i18n)
