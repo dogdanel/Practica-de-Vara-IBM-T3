@@ -16,6 +16,11 @@ html {
   box-sizing: border-box;
 }
 
+html {
+  /* Base font size: 1rem === 16px */
+  font-size: 100%;
+}
+
 body {
   margin: 0;
   font: var(--fw-regular) var(--fs-base) / 1.5 var(--font-sans);

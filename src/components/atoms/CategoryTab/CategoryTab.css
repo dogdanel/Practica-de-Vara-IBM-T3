@@ -1,0 +1,18 @@
+.category-tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-md);
+  color: var(--color-text-primary);
+  padding: 0 var(--spacing-md) 0 0;
+  white-space: nowrap;
+  transition: color var(--transition-base);
+}
+
+.category-tab:hover,
+.category-tab--active {
+  color: var(--color-primary);
+}

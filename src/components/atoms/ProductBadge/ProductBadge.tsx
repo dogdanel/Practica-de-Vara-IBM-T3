@@ -4,7 +4,7 @@ import './ProductBadge.css';
 
 interface ProductBadgeProps {
   children: ReactNode;
-  variant?: 'discount' | 'sale' | 'hot' | 'new';
+  variant?: 'discount' | 'discount-blue' | 'sale' | 'hot' | 'new';
   position?: 'left' | 'right';
   className?: string;
 }

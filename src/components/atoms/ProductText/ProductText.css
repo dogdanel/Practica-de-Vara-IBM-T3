@@ -1,60 +1,69 @@
-@import '../../../styles/variables.css';
-
 .product-text {
   margin: 0;
-  font-family: var(--font-body);
-  line-height: 1.4;
+  font-family: inherit;
+  line-height: var(--line-height-body);
 }
 
 .product-text--category {
-  font-size: 0.50rem;
-  font-weight: 600;
-  color: var(--brand-gray);
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xs);
+  color: var(--color-text-muted);
 }
 
 .product-text--title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--text-dark);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-sm);
+  color: var(--color-text-primary);
 }
 
 .product-text--brand {
-  font-size: 0.80rem;
-  font-weight: 400;
-  color: var(--brand-gray);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-lg);
+  color: var(--color-text-subtle);
 }
 
 .product-text--review-count {
-  font-size: 0.875rem;
-  color: var(--brand-gray);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
 }
 
 .product-text--price-current {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--brand-green);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-lg);
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 .product-text--price-old {
-  font-size: 0.875rem;
-  color: var(--brand-gray);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-lg);
+  color: var(--color-text-muted);
   text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .product-text--button {
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
 }
 
 .product-text--badge {
-  font-size: 0.70rem;
-  font-weight: 600;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
 }
 
 .product-text--rating {
-  font-size: 0.65rem;
-  color: var(--brand-gray);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
 }
