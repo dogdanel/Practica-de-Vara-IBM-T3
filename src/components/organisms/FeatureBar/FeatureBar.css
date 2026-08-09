@@ -1,0 +1,25 @@
+.feature-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+/* --breakpoint-sm: 40rem (see src/constants/breakpoints.ts) */
+@media (min-width: 40rem) {
+  .feature-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .feature-bar {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.feature-bar__item {
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+  padding: var(--space-lg);
+}

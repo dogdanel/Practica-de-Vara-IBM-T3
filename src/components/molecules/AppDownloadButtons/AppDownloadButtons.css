@@ -1,0 +1,16 @@
+.app-download-buttons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.app-download-buttons__link {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.app-download-buttons__badge {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+}

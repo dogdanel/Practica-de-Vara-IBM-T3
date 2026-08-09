@@ -1,0 +1,106 @@
+.hero-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: var(--space-3xl);
+  padding-left: var(--space-xl);
+  padding-right: var(--space-xl);
+  max-width: var(--layout-max-width);
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .hero-wrapper {
+    padding-left: var(--space-gutter);
+    padding-right: var(--space-gutter);
+  }
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-hero);
+  background-image: url('/hero/hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: var(--space-2xl) var(--space-xl);
+  min-height: 20rem;
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .hero {
+    padding: var(--space-5xl) var(--space-4xl);
+    min-height: 29.3125rem;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  max-width: 40rem;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-display-mobile);
+  line-height: var(--line-height-tight);
+  color: var(--color-brand-dark);
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .hero__title {
+    font-size: var(--font-size-display);
+    line-height: 1;
+  }
+}
+
+.hero__subtitle {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-loose);
+  color: var(--color-brand-gray);
+}
+
+.hero__subtitle-accent {
+  color: var(--color-brand-green);
+  font-weight: var(--font-weight-bold);
+}
+
+.hero__image {
+  display: none;
+  position: absolute;
+  right: 1.875rem;
+  bottom: 0;
+  width: 39.75rem;
+  max-width: 44%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .hero__image {
+    display: block;
+  }
+}
+
+/* --breakpoint-xl: 80rem */
+@media (min-width: 80rem) {
+  .hero__image {
+    right: 3.125rem;
+  }
+}

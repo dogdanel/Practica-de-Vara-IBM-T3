@@ -1,5 +1,4 @@
-export { I18nProvider, I18nContext } from './I18nProvider';
-export type { I18nContextValue } from './I18nProvider';
-export { useTranslation } from './useTranslation';
-export { DEFAULT_LOCALE, translations } from './translations';
-export type { Locale, TranslationKey } from './translations';
+export { default as I18nProvider } from './I18nProvider';
+export { default as useTranslation } from './useTranslation';
+export { I18nContext, type I18nContextValue } from './I18nContext';
+export { DEFAULT_LOCALE, LOCALES, translations, type Locale, type Translations } from './translations';

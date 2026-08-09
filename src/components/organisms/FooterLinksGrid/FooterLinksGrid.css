@@ -1,0 +1,21 @@
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: var(--space-xl);
+  row-gap: var(--space-3xl);
+  flex: 1 1 34rem;
+}
+
+/* --breakpoint-sm: 40rem */
+@media (min-width: 40rem) {
+  .footer-links-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* --breakpoint-lg: 64rem */
+@media (min-width: 64rem) {
+  .footer-links-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

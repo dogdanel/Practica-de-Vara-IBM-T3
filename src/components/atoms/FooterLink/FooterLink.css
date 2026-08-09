@@ -1,0 +1,15 @@
+.footer-link {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-brand-dark);
+  transition: color var(--transition-base);
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--color-brand-green);
+}

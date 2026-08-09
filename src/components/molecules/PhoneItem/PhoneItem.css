@@ -1,0 +1,31 @@
+.phone-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.phone-item__icon {
+  color: var(--color-brand-green);
+  flex-shrink: 0;
+}
+
+.phone-item__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-item__number {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-brand-green);
+  text-decoration: none;
+}
+
+.phone-item__label {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05625rem;
+  color: var(--color-brand-gray);
+}

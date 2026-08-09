@@ -1,0 +1,24 @@
+import { PhoneIcon } from '../../Icons';
+import { ICON_SIZES } from '../../../constants';
+import './PhoneItem.css';
+
+interface PhoneItemProps {
+  number: string;
+  label: string;
+}
+
+export default function PhoneItem({ number, label }: PhoneItemProps) {
+  const tel = number.replace(/\s+/g, '');
+
+  return (
+    <div className="phone-item">
+      <PhoneIcon size={ICON_SIZES.lg} className="phone-item__icon" />
+      <div className="phone-item__content">
+        <a href={`tel:${tel}`} className="phone-item__number">
+          {number}
+        </a>
+        <span className="phone-item__label">{label}</span>
+      </div>
+    </div>
+  );
+}

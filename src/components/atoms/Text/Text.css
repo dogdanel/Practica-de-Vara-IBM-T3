@@ -1,0 +1,7 @@
+.text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-brand-gray);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}

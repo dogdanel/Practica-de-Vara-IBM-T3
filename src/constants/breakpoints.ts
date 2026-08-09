@@ -1,18 +1,20 @@
 /**
- * Responsive breakpoints (rem based, 1rem === 16px).
- * These are the only breakpoints allowed in the app; the CSS media queries
- * in `src/styles/responsive.css` mirror these exact values.
+ * Responsive breakpoints, expressed in `rem` (1rem = 16px).
+ * The same values are declared once for CSS in `src/styles/tokens.css`
+ * (see the "Breakpoints" section) and must stay in sync with this file.
  */
 export const BREAKPOINTS = {
-  xs: '27.5rem', // 440px
   sm: '40rem', // 640px
-  md: '47.5rem', // 760px
-  lg: '56.25rem', // 900px
-  xl: '65.625rem', // 1050px
-  xxl: '82.25rem', // 1316px
+  md: '48rem', // 768px
+  lg: '64rem', // 1024px
+  xl: '80rem', // 1280px
+} as const;
+
+export const MEDIA_QUERIES = {
+  sm: `(min-width: ${BREAKPOINTS.sm})`,
+  md: `(min-width: ${BREAKPOINTS.md})`,
+  lg: `(min-width: ${BREAKPOINTS.lg})`,
+  xl: `(min-width: ${BREAKPOINTS.xl})`,
 } as const;
 
 export type BreakpointName = keyof typeof BREAKPOINTS;
-
-export const mediaMaxWidth = (name: BreakpointName): string =>
-  `(max-width: ${BREAKPOINTS[name]})`;

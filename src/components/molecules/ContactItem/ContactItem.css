@@ -1,0 +1,34 @@
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.contact-item__icon {
+  color: var(--color-brand-green);
+  flex-shrink: 0;
+  margin-top: var(--space-2xs);
+}
+
+.contact-item__text {
+  color: var(--color-brand-dark);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
+
+.contact-item__label {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+}
+
+.contact-item__link {
+  color: var(--color-brand-green);
+  text-decoration: none;
+}
+
+.contact-item__link:hover,
+.contact-item__link:focus-visible {
+  text-decoration: underline;
+}

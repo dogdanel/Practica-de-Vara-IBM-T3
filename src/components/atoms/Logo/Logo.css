@@ -1,45 +1,12 @@
 .logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo__mark {
-  width: 2.75rem;
-  height: 2.125rem;
-  flex: none;
-}
-
-.logo__leaf {
-  fill: var(--color-logo-leaf);
-}
-.logo__yellow {
-  fill: var(--color-logo-yellow);
-}
-.logo__orange {
-  fill: var(--color-logo-orange);
-}
-.logo__sprout {
-  fill: var(--color-green);
-}
-
-.logo__text {
   display: flex;
   flex-direction: column;
-  line-height: 1;
+  align-items: flex-start;
+  padding-bottom: var(--space-lg);
 }
 
-.logo__name {
-  font-size: var(--fs-3xl);
-  font-weight: var(--fw-bold);
-  color: var(--color-green);
-  letter-spacing: -0.03125rem;
-}
-
-.logo__tagline {
-  font-size: var(--fs-3xs);
-  font-weight: var(--fw-bold);
-  letter-spacing: 0.1rem;
-  color: var(--color-heading);
-  margin-top: 0.1875rem;
+.logo__image {
+  width: 12.5rem;
+  max-width: 100%;
+  height: auto;
 }
