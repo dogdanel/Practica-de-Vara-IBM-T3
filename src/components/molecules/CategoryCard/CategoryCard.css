@@ -1,0 +1,33 @@
+@import '../../../styles/variables.css';
+
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-card:hover {
+  border-color: var(--border-light);
+  box-shadow: var(--box-shadow);
+}
+
+.category-card__content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-icon {
+  width: 2rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

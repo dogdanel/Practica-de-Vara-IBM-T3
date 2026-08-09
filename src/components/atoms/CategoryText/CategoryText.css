@@ -1,0 +1,8 @@
+@import '../../../styles/variables.css';
+
+.category-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--brand-dark);
+  line-height: 1.2;
+}

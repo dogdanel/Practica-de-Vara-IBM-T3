@@ -1,0 +1,28 @@
+.button-set ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.button-set a {
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.button-set a:hover {
+  color: var(--color-green);
+}
+
+.button-set--separated ul {
+  gap: 0;
+}
+
+.button-set--separated li + li {
+  border-left: var(--hairline) solid var(--color-border);
+}
+
+.button-set--separated a {
+  display: block;
+  padding: 0 0.875rem;
+}

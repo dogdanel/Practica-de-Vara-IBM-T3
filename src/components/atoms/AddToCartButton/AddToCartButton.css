@@ -1,0 +1,27 @@
+.add-to-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-button-width);
+  height: var(--size-button-height);
+  gap: var(--spacing-2xs);
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.add-to-cart-btn__icon {
+  color: inherit;
+}
