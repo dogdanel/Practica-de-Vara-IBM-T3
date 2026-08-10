@@ -42,8 +42,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   statusBadgeKey,
   statusBadgeVariant = 'sale',
   onAddToCart,
-}) => {
-  const { t } = useTranslation();
+}) => { 
+  const { t:translation } = useTranslation();
 
   const renderStars = () => {
     const stars: ReactNode[] = [];
@@ -62,7 +62,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {discountPercentage !== undefined && (
         <div className="product-card__badge-wrapper product-card__badge-wrapper--left">
           <ProductBadge variant={discountBadgeVariant} position="left">
-            {t('badge.discount', { value: discountPercentage })}
+            {translation('badge.discount', { value: discountPercentage })}
           </ProductBadge>
         </div>
       )}
@@ -70,7 +70,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {statusBadgeKey && (
         <div className="product-card__badge-wrapper product-card__badge-wrapper--right">
           <ProductBadge variant={statusBadgeVariant} position="right">
-            {t(statusBadgeKey)}
+            {translation(statusBadgeKey)}
           </ProductBadge>
         </div>
       )}
@@ -90,20 +90,20 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         <div
           className="product-card__rating"
-          aria-label={t('product.rating.ariaLabel', {
+          aria-label={translation('product.rating.ariaLabel', {
             rating,
             max: RATING_MAX_STARS,
           })}
         >
           <div className="product-card__stars">{renderStars()}</div>
           <ProductText variant="rating" as="span">
-            {t('product.reviews', { count: reviewCount })}
+            {translation('product.reviews', { count: reviewCount })}
           </ProductText>
         </div>
 
         <div className="product-card__brand-info">
           <ProductText variant="brand" as="span">
-            {t('product.by')}{' '}
+            {translation('product.by')}{' '}
             <span className="product-card__brand-name">{brand}</span>
           </ProductText>
         </div>
