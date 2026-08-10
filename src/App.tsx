@@ -1,12 +1,12 @@
-import { ShopPage } from './components/templates/ShopPage/ShopPage';
-import { I18nProvider } from './i18n';
+import "./variables.css";
+import { ProductTagsSection } from "./components/organisms/ProductTagsSection/ProductTagsSection";
 
-export const App: React.FC = () => {
-  return (
-    <I18nProvider>
-      <ShopPage />
-    </I18nProvider>
-  );
+function App() {
+ return (
+  <div style={{ padding: "2rem", background: "var(--background)" }}>
+   <ProductTagsSection />
+  </div>
+ );
 }
 
 export default App;

@@ -1,12 +1,12 @@
-import Hero from '../components/organisms/Hero/Hero';
-import Footer from '../components/Footer/Footer';
-import './App.css';
+import "../styles/variables.css";
+import { ProductTagsSection } from "../components/organisms/ProductTagsSection/ProductTagsSection";
 
-export default function App() {
-  return (
-    <div className="app">
-      <Hero />
-      <Footer />
-    </div>
-  );
+function App() {
+ return (
+  <div style={{ padding: "2rem", background: "var(--background)" }}>
+   <ProductTagsSection />
+  </div>
+ );
 }
+
+export default App;

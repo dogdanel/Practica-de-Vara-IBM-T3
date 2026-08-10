@@ -1,0 +1,32 @@
+@import "../../../styles/variables.css";
+
+.product-tag {
+ display: inline-flex;
+ align-items: center;
+ gap: 0.5rem;
+ padding: 0.5rem 1rem;
+ background-color: var(--background);
+ border: 1px solid var(--border);
+ border-radius: var(--border-radius);
+ cursor: pointer;
+ font-family: inherit;
+ font-size: 0.875rem;
+ font-weight: 500;
+ color: var(--text-dark);
+ transition: all 0.2s ease;
+}
+
+.product-tag:hover {
+ border-color: var(--border-light);
+ box-shadow: var(--box-shadow);
+}
+
+.product-tag__close {
+ font-size: 0.75rem;
+ color: var(--brand-gray);
+ transition: color 0.2s ease;
+}
+
+.product-tag:hover .product-tag__close {
+ color: var(--brand-dark);
+}

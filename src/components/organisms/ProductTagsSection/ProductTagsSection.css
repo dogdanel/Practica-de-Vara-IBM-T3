@@ -1,0 +1,16 @@
+@import "../../../styles/variables.css";
+
+.product-tags-section {
+ background-color: var(--background);
+ border: 1px solid var(--border);
+ border-radius: var(--border-radius);
+ padding: 1.5rem;
+ box-shadow: var(--box-shadow);
+ width: 100%;
+ max-width: 100%;
+ box-sizing: border-box;
+}
+
+.product-tags-widget__content {
+ margin-top: 1.25rem;
+}
