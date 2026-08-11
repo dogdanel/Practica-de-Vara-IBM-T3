@@ -43,5 +43,11 @@ export const translations = {
   },
 } as const;
 
+export const LOCALES = {
+  EN: 'en',
+  RO: 'ro',
+} as const;
+
+export type Translations = typeof translations;
 export type Locale = keyof typeof translations;
 export type TranslationKey = keyof (typeof translations)['en'];
