@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '../../../i18n';
 import { AddToCartButton } from '../../atoms/AddToCartButton/AddToCartButton';
 import './DealCard.css';
 
@@ -22,7 +22,7 @@ export const DealCard: React.FC<DealCardProps> = ({
   onAddToCart,
   className = '',
 }) => {
-  const { t:translate } = useTranslation();
+  const { t: translate } = useTranslation();
 
   return (
     <div className={`deal-card ${className}`.trim()}>

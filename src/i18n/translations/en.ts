@@ -117,6 +117,43 @@ export const en = {
       instagram: 'Instagram',
     },
   },
+  shop: {
+    title: 'Popular Products',
+    filters: {
+      ariaLabel: 'Product categories',
+    },
+  },
+  product: {
+    addToCart: 'Add',
+    addToCartAriaLabel: 'Add product to cart',
+    by: 'By',
+    reviews: '({{count}})',
+    rating: {
+      ariaLabel: '{{rating}} out of {{max}} stars',
+    },
+  },
+  badge: {
+    sale: 'Sale',
+    new: 'New',
+    hot: 'Hot',
+    discount: '{{value}}%',
+  },
+  category: {
+    all: 'All',
+    bakingMaterial: 'Baking material',
+    freshFruits: 'Fresh Fruits',
+    milksAndDairies: 'Milks & Dairies',
+    meats: 'Meats',
+    vegetables: 'Vegetables',
+  },
+  categoryMenu: {
+    title: 'Shop by Category',
+    allCategories: 'All Categories',
+  },
+  deals: {
+    title: 'Deals of the Day',
+    linkText: 'See All Deals',
+  },
 } as const;
 
 export type Translations = typeof en;

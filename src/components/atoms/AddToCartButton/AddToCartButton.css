@@ -14,8 +14,7 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  max-width: 5.5rem;
+  transition: all var(--transition-fast);
 }
 
 .add-to-cart-btn:hover {

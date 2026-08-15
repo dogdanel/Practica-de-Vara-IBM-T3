@@ -5,7 +5,16 @@ export const ICON_SIZES = {
   md: 20,
   lg: 26,
   xl: 30,
+  /** Default icon size (used when a component omits `size`). */
+  default: 20,
+  /** Rating stars inside the product card. */
+  star: 12,
+  /** Cart icon inside the add-to-cart button. */
+  cart: 16,
 } as const;
+
+/** Number of stars rendered by the product rating. */
+export const RATING_MAX_STARS = 5;
 
 /** Static asset paths, so no string literal is duplicated across components. */
 export const IMAGES = {

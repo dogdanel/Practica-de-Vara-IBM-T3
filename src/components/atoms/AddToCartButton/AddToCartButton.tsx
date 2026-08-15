@@ -11,18 +11,21 @@ interface AddToCartButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
-  label = 'product.add',
+  label,
   className = '',
   ...props
 }) => {
-  const { t:translation } = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    <button className={`add-to-cart-btn ${className}`.trim()} {...props}>
-      <CartIcon size={16} className="add-to-cart-btn__icon" />
-      <span className="add-to-cart-btn__text">
-        {translation(label)}
-      </span>
+    <button
+      type="button"
+      className={`add-to-cart-btn ${className}`.trim()}
+      aria-label={t('product.addToCartAriaLabel')}
+      {...props}
+    >
+      <CartIcon size={ICON_SIZES.cart} className="add-to-cart-btn__icon" />
+      <span className="add-to-cart-btn__text">{label ?? t('product.addToCart')}</span>
     </button>
   );
 };

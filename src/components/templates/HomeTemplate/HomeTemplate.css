@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+
+.home__main {
+  flex: 1;
+}
+
+.home__section {
+  padding-block: 2.5rem;
+}
+
+.home__hero {
+  padding-block: 1.5rem 3rem;
+}
+
+@media (max-width: 47.5rem) {
+  .home__section {
+    padding-block: 1.5rem;
+  }
+}
