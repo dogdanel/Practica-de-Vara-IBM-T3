@@ -7,4 +7,4 @@ export {
   type FontSizeName,
 } from './fontSizes';
 export { BREAKPOINTS, MEDIA_QUERIES, type BreakpointName } from './breakpoints';
-export { ICON_SIZES, IMAGES, CONTACT } from './sizes';
+export { ICON_SIZES, IMAGES, CONTACT, RATING_MAX_STARS } from './sizes';

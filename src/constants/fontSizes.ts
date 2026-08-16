@@ -1,7 +1,3 @@
-/**
- * Typography scale. All values are in `rem` (1rem = 16px) so the UI scales
- * with the user's browser font-size settings. Never use `px` in components.
- */
 export const FONT_SIZES = {
   xs: '0.75rem', // 12px
   sm: '0.875rem', // 14px

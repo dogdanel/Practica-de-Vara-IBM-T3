@@ -1,26 +1,96 @@
 /**
- * Design tokens for CSS.
- * Mirrors src/constants (colors.ts, fontSizes.ts, breakpoints.ts) 1:1.
- * Component stylesheets must only use these custom properties — never raw
- * hex colors or px values.
+ * Unified design tokens for the whole app.
+ *
+ * This file is the single source of truth: it merges the tokens that used to
+ * live on separate feature branches (header/banner, product grid, category
+ * menu, footer) and defines every custom property referenced by a component
+ * stylesheet. Component stylesheets must only use these custom properties —
+ * never raw hex colors.
  */
 :root {
-  /* ---------- Colors (src/constants/colors.ts) ---------- */
+  /* ---------- Brand colors ---------- */
   --color-brand-dark: #253d4e;
   --color-brand-green: #3bb77e;
   --color-brand-gray: #7e7e7e;
   --color-brand-gray-light: #adadad;
+
+  --color-green: #3bb77e;
+  --color-green-dark: #29a56c;
+  --color-green-light: #def9ec;
+  --color-green-rgb: 59, 183, 126;
+
+  --color-primary: #3bb77e;
+  --color-primary-dark: #29a56c;
+  --color-primary-darker: #1a9c68;
+  --color-primary-soft: #def9ec;
+  --brand-light: #def9ec;
+
+  --color-danger: #f74b81;
+  --color-info: #67bcee;
+
+  /* ---------- Text colors ---------- */
+  --color-heading: #253d4e;
+  --color-text: #7e7e7e;
+  --color-text-soft: #adadad;
+  --color-text-primary: #253d4e;
+  --color-text-secondary: #7e7e7e;
+  --color-text-muted: #adadad;
+  --color-text-subtle: #b6b6b6;
   --color-text-dark: #242424;
-  --color-border-light: #bce3c9;
-  --color-white: #ffffff;
-  --color-surface: #f3f4f6;
-  --color-surface-muted: #f4f6fa;
-  --color-surface-hero: #e5f6ec;
   --color-placeholder: #838383;
 
-  /* ---------- Typography (src/constants/fontSizes.ts) ---------- */
-  --font-heading: 'Quicksand', sans-serif;
-  --font-body: 'Lato', sans-serif;
+  /* ---------- Surfaces & lines ---------- */
+  --color-white: #ffffff;
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f6fa;
+  --color-surface-hero: #e5f6ec;
+  --color-banner-bg: #f4f6f8;
+  --color-border: #ececec;
+  --color-border-soft: #f2f3f4;
+  --color-border-light: #bce3c9;
+
+  /* ---------- Ratings & badges ---------- */
+  --color-star-filled: #fdc040;
+  --color-star-empty: #dfe1e5;
+
+  /* ---------- Logo mark ---------- */
+  --color-logo-leaf: #8fd6b0;
+  --color-logo-yellow: #f2b705;
+  --color-logo-orange: #f28705;
+  --color-logo-yellow-rgb: 242, 183, 5;
+  --color-logo-orange-rgb: 242, 135, 5;
+
+  /* ---------- Banner (Figma frame, 1920 wide) ---------- */
+  --banner-min-height: 33.625rem;
+  --banner-padding-block: 6.15625rem;
+  --banner-padding-inline: 6.25rem;
+  --fs-banner-title: 4.5rem;
+  --fs-banner-subtitle: 1.875rem;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  /* ---------- Typography ---------- */
+  --font-heading: 'Quicksand', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Lato', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: var(--font-heading);
+  --font-family-heading: var(--font-heading);
+  --font-family-body: var(--font-body);
+
+  --fs-3xs: 0.5625rem;
+  --fs-2xs: 0.625rem;
+  --fs-xs: 0.6875rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.875rem;
+  --fs-md: 0.9375rem;
+  --fs-lg: 1rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.375rem;
+  --fs-3xl: 2.125rem;
+  --fs-4xl: 3.5rem;
 
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -32,18 +102,40 @@
   --font-size-display: 4.5rem;
   --font-size-display-mobile: 2.25rem;
 
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-none: 1;
+  --line-height-xs: 1.2;
+  --line-height-sm: 1.3;
+  --line-height-md: 1.4;
+  --line-height-body: 1.6;
+  --line-height-lg: 1.5;
+  --line-height-xl: 1.4;
   --line-height-tight: 1.15;
   --line-height-snug: 1.35;
   --line-height-normal: 1.5;
   --line-height-relaxed: 1.625;
   --line-height-loose: 1.75;
 
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
   /* ---------- Spacing ---------- */
+  --spacing-3xs: 0.25rem;
+  --spacing-2xs: 0.375rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 0.5rem;
+  --spacing-lg: 1.25rem;
+  --spacing-xl: 1.25rem;
+  --spacing-2xl: 1.5rem;
+  --spacing-3xl: 1.5rem;
+  --spacing-4xl: 2rem;
+
   --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
@@ -54,32 +146,54 @@
   --space-3xl: 2.5rem;
   --space-4xl: 4rem;
   --space-5xl: 5.25rem;
-  --space-gutter: 9.4375rem; /* desktop page gutter */
+  --space-gutter: 9.4375rem;
 
   /* ---------- Radii ---------- */
-  --radius-sm: 0.375rem;
+  --radius: 0.25rem;
+  --radius-sm: 0.5rem;
   --radius-md: 0.625rem;
-  --radius-lg: 1.25rem;
-  --radius-pill: 3.125rem;
+  --radius-lg: 0.9375rem;
+  --radius-xl: 1.25rem;
+  --radius-pill: 1.875rem;
+  --radius-pill-lg: 3.125rem;
   --radius-full: 9999px;
+  --border-radius: 1rem;
+
+  /* ---------- Component sizes ---------- */
+  --size-badge-height: 1.6875rem;
+  --size-badge-min-width: 3.125rem;
+  --size-button-width: 5.3125rem;
+  --size-button-height: 2.1875rem;
+  --size-card-height: auto;
+  --size-card-image-height: 12.5rem;
+  --size-card-image-inner-height: auto;
+  --size-card-title-height: auto;
+  --size-row-height: auto;
+  --size-header-min-height: 3.5rem;
+  --size-page-max-width: 75rem;
 
   /* ---------- Layout ---------- */
-  --layout-max-width: 119.5rem; /* 1912px */
-  --layout-content-width: 100.625rem; /* 1610px */
+  --container: 75rem;
+  --hairline: 0.0625rem;
+  --layout-max-width: 119.5rem;
+  --layout-content-width: 100.625rem;
   --footer-column-width: 12.9375rem;
   --footer-side-column-width: 19.9375rem;
   --footer-brand-width: 17.5rem;
 
-  /* ---------- Breakpoints (src/constants/breakpoints.ts) ----------
-   * Media queries cannot read custom properties, so the same rem values
-   * are written literally in the component stylesheets:
-   *   sm 40rem | md 48rem | lg 64rem | xl 80rem
-   */
-  --breakpoint-sm: 40rem;
-  --breakpoint-md: 48rem;
-  --breakpoint-lg: 64rem;
-  --breakpoint-xl: 80rem;
+  /* ---------- Legacy aliases (deals / product card branch) ---------- */
+  --brand-dark: #253d4e;
+  --brand-green: #3bb77e;
+  --brand-gray: #7e7e7e;
+  --brand-gray-light: #adadad;
+  --brand-accent: #c3ffcf;
+  --text-dark: #242424;
+  --border-light: #bce3c9;
+  --background: #ffffff;
+  --border: #ececec;
+  --star-color: #fdc040;
 
   /* ---------- Motion ---------- */
   --transition-base: 0.2s ease;
+  --transition-fast: 0.15s ease;
 }

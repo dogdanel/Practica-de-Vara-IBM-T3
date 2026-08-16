@@ -1,6 +1,6 @@
 export interface IconProps {
-  /** Icon size in rem, e.g. ICON_SIZES.cart */
-  size?: string;
+  /** Icon size in px, e.g. ICON_SIZES.cart */
+  size?: number;
   className?: string;
   title?: string;
 }

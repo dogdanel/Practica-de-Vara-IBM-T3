@@ -1,0 +1,11 @@
+header {
+  width: 100%;
+}
+
+header .container,
+header [class*="__container"] {
+  max-width: 1600px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}

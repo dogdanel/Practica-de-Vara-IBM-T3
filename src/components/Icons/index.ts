@@ -1,3 +1,7 @@
+export { CartIcon } from './CartIcon/CartIcon';
+export { EmptyStarIcon } from './EmptyStarIcon/EmptyStarIcon';
+export { FullStarIcon } from './FullStarIcon/FullStarIcon';
+export { CategoryIcon } from './CategoryIcon/CategoryIcon';
 export { default as FacebookIcon } from './FacebookIcon';
 export { default as TwitterIcon } from './TwitterIcon';
 export { default as SkypeIcon } from './SkypeIcon';

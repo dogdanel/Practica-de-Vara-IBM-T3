@@ -1,7 +1,3 @@
-/**
- * Font families, font sizes (rem) and line heights (rem).
- * Base font size is 16px, so 1rem === 16px.
- */
 export const FONT_FAMILIES = {
   heading: 'Quicksand, Arial, sans-serif',
   body: 'Lato, Arial, sans-serif',

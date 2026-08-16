@@ -1,8 +1,3 @@
-/**
- * Responsive breakpoints, expressed in `rem` (1rem = 16px).
- * The same values are declared once for CSS in `src/styles/tokens.css`
- * (see the "Breakpoints" section) and must stay in sync with this file.
- */
 export const BREAKPOINTS = {
   sm: '40rem', // 640px
   md: '48rem', // 768px
