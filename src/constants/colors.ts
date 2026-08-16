@@ -1,8 +1,3 @@
-/**
- * Single source of truth for every color used in the app.
- * CSS consumes the same values through the custom properties in
- * `src/styles/tokens.css` (kept 1:1 with this file).
- */
 export const COLORS = {
   brandDark: '#253d4e',
   brandGreen: '#3bb77e',

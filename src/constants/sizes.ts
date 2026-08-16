@@ -1,15 +1,12 @@
-/** Icon sizes used with the components from `src/components/Icons`. */
 export const ICON_SIZES = {
   xs: 12,
   sm: 16,
   md: 20,
   lg: 26,
   xl: 30,
-  /** Default icon size (used when a component omits `size`). */
+  // Default icon size
   default: 20,
-  /** Rating stars inside the product card. */
   star: 12,
-  /** Cart icon inside the add-to-cart button. */
   cart: 16,
 } as const;
 

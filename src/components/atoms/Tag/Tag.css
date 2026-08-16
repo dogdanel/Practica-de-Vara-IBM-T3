@@ -11,8 +11,8 @@
  cursor: pointer;
  font-family: inherit;
  font-size: 0.875rem;
- font-weight: 500;
- color: var(--text-dark);
+ font-weight: 600;
+ color: var(--brand-green);
  transition: all 0.2s ease;
 }
 
