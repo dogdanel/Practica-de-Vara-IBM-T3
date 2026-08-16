@@ -1,8 +1,8 @@
 import React from 'react';
 import { CategoryFilter } from '../../molecules/CategoryFilter/CategoryFilter';
 import { ProductGrid } from '../../organisms/ProductGrid/ProductGrid';
-import { categories, products } from '../../../data/products';
-import type { ProductData } from '../../../data/products';
+import { categories, products } from '../../../mocks/products';
+import type { ProductData } from '../../../mocks/products';
 import { useTranslation } from '../../../i18n';
 import './ShopPage.css';
 

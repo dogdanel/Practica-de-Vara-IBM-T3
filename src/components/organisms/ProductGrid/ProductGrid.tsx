@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProductCard } from '../../molecules/ProductCard/ProductCard';
-import type { ProductData } from '../../../data/products';
+import type { ProductData } from '../../../mocks/products';
 import './ProductGrid.css';
 
 interface ProductGridProps {

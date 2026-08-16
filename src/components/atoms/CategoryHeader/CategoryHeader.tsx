@@ -23,7 +23,7 @@ export const CategoryHeaderSBCM: React.FC<CategoryHeaderProps> = ({
 }) => {
   return (
     <div className={`category-header-SBCM ${className}`.trim()}>
-      <h2 className="category-header-SBCM__title">{title}</h2>
+      <h3 className="category-header-SBCM__title">{title}</h3>
     </div>
   );
 }
