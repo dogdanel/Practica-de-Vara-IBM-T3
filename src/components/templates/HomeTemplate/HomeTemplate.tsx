@@ -13,6 +13,7 @@ import { ProductTagsSection } from "../../organisms/ProductTagsSection/ProductTa
 import { FeaturedProductsSection } from "../../organisms/FeaturedProductsSection/FeaturedProductsSection";
 import { PromoBanners } from "../../organisms/PromoBanners/PromoBanners";
 import { promoCardsData } from "../../../mocks/promoCards.mock";
+import "primeicons/primeicons.css";
 
 export default function HomeTemplate() {
  const { t: translation } = useTranslation();
