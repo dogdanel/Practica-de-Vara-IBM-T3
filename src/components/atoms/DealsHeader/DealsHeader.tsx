@@ -11,8 +11,8 @@ export const DealsHeader: React.FC<DealsHeaderProps> = ({
   className = '',
 }) => {
   return (
-    <h2 className={`deals-header ${className}`.trim()}>
+    <h3 className={`deals-header ${className}`.trim()}>
       {children}
-    </h2>
+    </h3>
   );
 };

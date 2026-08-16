@@ -11,6 +11,8 @@ import "./HomeTemplate.css";
 import { CategoryMenu } from "../../organisms/CategoryMenu/CategoryMenu";
 import { ProductTagsSection } from "../../organisms/ProductTagsSection/ProductTagsSection";
 import { FeaturedProductsSection } from "../../organisms/FeaturedProductsSection/FeaturedProductsSection";
+import { PromoBanners } from "../../organisms/PromoBanners/PromoBanners";
+import { promoCardsData } from "../../../mocks/promoCards.mock";
 
 export default function HomeTemplate() {
  const { t: translation } = useTranslation();
@@ -49,6 +51,7 @@ export default function HomeTemplate() {
      </section>
 
      <section className="home__shop-by-category">
+      <PromoBanners banners={promoCardsData} />
       <ShopByCategoryMenu />
      </section>
 
