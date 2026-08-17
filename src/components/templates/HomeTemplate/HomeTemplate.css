@@ -29,8 +29,8 @@
  padding-inline: 2rem;
  display: flex;
  flex-direction: column;
- gap: -1rem;
- margin-top: 2rem;
+ gap: 0rem;
+ margin-top: 1.5rem;
 }
 
 .home__content-layout {
@@ -63,10 +63,12 @@
  max-width: 74rem;
  align-items: start;
  margin-left: -2rem;
+ margin-top: -2rem;
 }
 
 .home__shop-by-category {
  padding-block: 1rem;
+ max-width: 94rem;
 }
 
 .home__hero {

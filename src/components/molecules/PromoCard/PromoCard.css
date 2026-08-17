@@ -10,8 +10,7 @@
  overflow: hidden;
  min-height: 19rem;
  box-shadow: var(--box-shadow);
- width: 32.25rem;
- max-width: 32.25rem;
+ max-width: 31rem;
 }
 
 .promo-card__content {
@@ -41,7 +40,7 @@
 }
 
 .promo-card__button:hover {
- background-color: var(--brand-green-dark);
+ background-color: var(--brand-dark);
 }
 
 .promo-card__image-wrapper {

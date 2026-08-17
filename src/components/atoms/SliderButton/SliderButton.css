@@ -1,4 +1,4 @@
-@import "../../../styles/variables.css";
+@import "../../../styles/tokens.css";
 
 .slider-button {
  display: inline-flex;
@@ -8,14 +8,14 @@
  height: 2.5rem;
  border-radius: 50%;
  border: none;
- background-color: var(--brand-accent);
- color: var(--brand-dark);
+ background-color: var(--brand-green);
+ color: var(--brand-light);
  cursor: pointer;
  transition: all 0.2s ease-in-out;
 }
 
 .slider-button:hover:not(:disabled) {
- background-color: var(--brand-green);
+ background-color: var(--brand-dark);
  color: var(--brand-light);
 }
 
@@ -25,5 +25,5 @@
 }
 
 .slider-button__icon {
- font-size: 16px;
+ font-size: 1rem;
 }

@@ -2,14 +2,15 @@
 
 .shop-by-category {
   width: 100%;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
+  margin-top: -1rem;
 }
 
 .shop-by-category__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1rem;
 }
 
 .shop-by-category__title-group {
