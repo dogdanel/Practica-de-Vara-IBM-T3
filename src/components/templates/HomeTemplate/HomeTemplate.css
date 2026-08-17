@@ -29,14 +29,14 @@
  padding-inline: 2rem;
  display: flex;
  flex-direction: column;
- gap: -1rem;
- margin-top: 2rem;
+ gap: 0rem;
+ margin-top: 1.5rem;
 }
 
 .home__content-layout {
  display: grid;
  grid-template-columns: 1fr 20rem;
- gap: 2rem;
+ gap: 1rem;
  align-items: start;
  max-width: 100rem;
 }
@@ -48,9 +48,8 @@
 .home__sidebar {
  display: flex;
  flex-direction: column;
- gap: 1.5rem;
+ gap: 1.4rem;
  margin-top: 5.4rem;
- gap: 2rem;
 }
 
 .home__section {
@@ -64,10 +63,12 @@
  max-width: 74rem;
  align-items: start;
  margin-left: -2rem;
+ margin-top: -2rem;
 }
 
 .home__shop-by-category {
  padding-block: 1rem;
+ max-width: 94rem;
 }
 
 .home__hero {

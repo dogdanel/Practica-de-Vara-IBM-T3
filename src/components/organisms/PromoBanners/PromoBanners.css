@@ -3,7 +3,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   width: 100%;
-  margin-block: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0rem;
 }
 
 @media (max-width: 62rem) {

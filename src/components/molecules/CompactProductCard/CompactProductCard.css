@@ -25,8 +25,8 @@
 }
 
 .compact-product-card__image {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 120%;
+  max-height: 120%;
   object-fit: contain;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .compact-product-card__title {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--brand-dark);
   margin: 0;
@@ -71,13 +71,21 @@
 }
 
 .compact-product-card__price {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--brand-green);
+
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-lg);
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
 .compact-product-card__old-price {
-  font-size: 0.85rem;
-  color: var(--brand-gray);
-  text-decoration: line-through;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-lg);
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+    opacity: 0.5;
 }

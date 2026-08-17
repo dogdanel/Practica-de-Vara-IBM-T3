@@ -1,7 +1,6 @@
 import type { IconProps } from './types'
 
 type IconBaseProps = IconProps & {
-  /** PrimeIcons name without the `pi-` prefix, e.g. `arrow-right`. */
   name: string
 }
 

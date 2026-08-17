@@ -11,7 +11,7 @@ import SearchBar from "../../atoms/SearchBar/SearchBar";
 import IconAction from "../../molecules/IconAction/IconAction";
 import "./MainBar.css";
 
-const ACTION_ICON_SIZE = 22;
+const ACTION_ICON_SIZE = 30;
 
 function MainBar() {
  return (
@@ -31,7 +31,7 @@ function MainBar() {
      variant="outline"
      pill
      className="main-bar__vendor"
-     iconAfter={<ArrowRightIcon size={16} />}
+     iconAfter={<ArrowRightIcon size={20} />}
     >
      Became Vendor
     </Button>
@@ -40,19 +40,26 @@ function MainBar() {
      <IconAction
       icon={<CompareIcon size={ACTION_ICON_SIZE} />}
       label="Compare"
+      labelSize={15}
       count={0}
      />
      <IconAction
       icon={<HeartIcon size={ACTION_ICON_SIZE} />}
       label="Wishlist"
+      labelSize={15}
       count={0}
      />
      <IconAction
       icon={<CartIcon size={ACTION_ICON_SIZE} />}
       label="Cart"
+      labelSize={15}
       count={0}
      />
-     <IconAction icon={<UserIcon size={ACTION_ICON_SIZE} />} label="Account" />
+     <IconAction
+      icon={<UserIcon size={ACTION_ICON_SIZE} />}
+      label="Account"
+      labelSize={15}
+     />
     </div>
    </div>
   </div>

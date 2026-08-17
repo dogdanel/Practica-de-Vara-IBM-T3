@@ -22,7 +22,7 @@ export const ShopByCategoryMenu: React.FC = () => {
     <section className="shop-by-category">
       <div className="shop-by-category__header">
         <div className="shop-by-category__title-group">
-          <CategoryHeaderSBCM title="Shop by Category" />
+          <CategoryHeaderSBCM title="Shop by Categories" />
           <a href="#categories" className="shop-by-category__link">
             All Categories &gt;
           </a>
