@@ -15,7 +15,7 @@
 .shop-by-category__title-group {
   display: flex;
   align-items: baseline;
-  gap: 1.25rem;
+  gap: 3rem;
 }
 
 .shop-by-category__title {
@@ -29,7 +29,7 @@
   font-size: 0.875rem;
   color: var(--brand-green);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .shop-by-category__link:hover {

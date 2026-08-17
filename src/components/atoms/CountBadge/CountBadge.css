@@ -4,7 +4,7 @@
  display: inline-flex;
  align-items: center;
  justify-content: center;
- min-width: 1.125rem;
+ width: 1.5rem;
  height: 1.5rem;
  padding: 0 0.5rem;
  background-color: var(--brand-accent);

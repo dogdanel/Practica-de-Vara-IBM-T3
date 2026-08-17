@@ -2,4 +2,5 @@
  display: flex;
  flex-wrap: wrap;
  gap: 0.5rem 0.625rem;
+ min-height: 17.7rem;
 }
