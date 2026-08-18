@@ -85,6 +85,10 @@
   display: block;
   margin-bottom: 0.5rem;
  }
+
+ .main-bar__actions .icon-action__label {
+  display: block;
+ }
 }
 
 @media (max-width: 47.9375rem) {
@@ -123,5 +127,4 @@
   padding: 0.4rem;
   min-width: unset;
  }
-
 }

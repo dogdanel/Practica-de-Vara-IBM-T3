@@ -1,14 +1,32 @@
 .category-icon {
- display: flex;
- align-items: center;
- justify-content: center;
- width: auto !important;
- height: auto !important;
- max-width: none !important;
- max-height: none !important;
+ display: inline-flex !important;
+ align-items: center !important;
+ justify-content: center !important;
+ width: 3.75rem !important;
+ height: 3.75rem !important;
 }
 
-.category-icon svg {
- max-width: none !important;
- max-height: none !important;
+.category-icon * {
+ width: 100% !important;
+ height: 100% !important;
+ min-width: 100% !important;
+ min-height: 100% !important;
+ max-width: 100% !important;
+ max-height: 100% !important;
+ box-sizing: border-box !important;
 }
+
+@media (max-width: 50rem) {
+ .category-icon {
+  width: 3rem !important;
+  height: 3rem !important;
+ }
+}
+
+@media (max-width: 30rem) {
+ .category-icon {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+ }
+}
+

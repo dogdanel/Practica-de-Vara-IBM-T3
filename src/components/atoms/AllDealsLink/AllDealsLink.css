@@ -18,3 +18,9 @@
 .all-deals-link__arrow {
   font-size: 0.75rem;
 }
+
+@media (max-width: 30rem) {
+.all-deals-link {
+  font-size: 0.7rem;
+ }
+}

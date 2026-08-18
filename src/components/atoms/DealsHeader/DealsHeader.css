@@ -1,8 +1,14 @@
-@import '../../../styles/variables.css';
+@import "../../../styles/variables.css";
 
 .deals-header {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin: 0;
+ font-size: 2rem;
+ font-weight: 700;
+ color: var(--text-dark);
+ margin: 0;
+}
+
+@media (max-width: 30rem) {
+ .deals-header {
+  font-size: 1.5rem;
+ }
 }
