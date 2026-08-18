@@ -1,8 +1,8 @@
 .search-bar {
  display: flex;
  align-items: stretch;
- width: 100%;
  max-width: 40rem;
+ min-width: 20rem;
  border: var(--hairline) solid var(--color-green);
  border-radius: var(--radius);
  overflow: hidden;
@@ -27,4 +27,21 @@
 .search-bar__button {
  border-radius: 0;
  padding-inline: 1.625rem;
+}
+
+@media (max-width: 30rem) {
+ .search-bar {
+  width: 5rem;
+  height: 2rem;
+ }
+
+ .search-bar__input {
+ padding: 0.5rem 1rem;
+ font-size: var(--fs-sm);
+}
+
+.search-bar__button {
+ border-radius: 0;
+ padding-inline: 1rem;
+}
 }

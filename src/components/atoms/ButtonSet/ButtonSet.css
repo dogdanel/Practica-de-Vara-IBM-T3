@@ -1,28 +1,43 @@
 .button-set ul {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
+ display: flex;
+ align-items: center;
+ gap: 1.25rem;
 }
 
 .button-set a {
-  font-size: var(--fs-sm);
-  color: var(--color-text);
-  transition: color 0.2s;
+ font-size: var(--fs-sm);
+ color: var(--color-text);
+ transition: color 0.2s;
+ line-height: 1;
+ white-space: nowrap;
 }
 
 .button-set a:hover {
-  color: var(--color-green);
+ color: var(--color-green);
 }
 
 .button-set--separated ul {
-  gap: 0;
+ gap: 0;
 }
 
 .button-set--separated li + li {
-  border-left: var(--hairline) solid var(--color-border);
+ border-left: var(--hairline) solid var(--color-border);
 }
 
 .button-set--separated a {
-  display: block;
-  padding: 0 0.875rem;
+ display: block;
+ padding: 0 0.875rem;
+}
+
+@media (max-width: 30rem) {
+ .button-set ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+ }
+
+ .button-set a {
+  font-size: var(--fs-2xs);
+  line-height: 0.95rem;
+ }
 }

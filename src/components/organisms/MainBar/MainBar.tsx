@@ -1,8 +1,10 @@
 import Button from "../../atoms/Button/Button";
+import Dropdown from "../../atoms/Dropdown/Dropdown";
 import {
  ArrowRightIcon,
  CartIcon,
  CompareIcon,
+ GridIcon,
  HeartIcon,
  UserIcon,
 } from "../../atoms/Icons";
@@ -11,7 +13,13 @@ import SearchBar from "../../atoms/SearchBar/SearchBar";
 import IconAction from "../../molecules/IconAction/IconAction";
 import "./MainBar.css";
 
-const ACTION_ICON_SIZE = 30;
+const CATEGORIES = [
+ { label: "Milks & Dairies" },
+ { label: "Clothing & Beauty" },
+ { label: "Pet Foods & Toys" },
+ { label: "Baking Material" },
+ { label: "Fresh Fruit" },
+];
 
 function MainBar() {
  return (
@@ -36,30 +44,41 @@ function MainBar() {
      Became Vendor
     </Button>
 
-    <div className="main-bar__actions">
-     <IconAction
-      icon={<CompareIcon size={ACTION_ICON_SIZE} />}
-      label="Compare"
-      labelSize={15}
-      count={0}
-     />
-     <IconAction
-      icon={<HeartIcon size={ACTION_ICON_SIZE} />}
-      label="Wishlist"
-      labelSize={15}
-      count={0}
-     />
-     <IconAction
-      icon={<CartIcon size={ACTION_ICON_SIZE} />}
-      label="Cart"
-      labelSize={15}
-      count={0}
-     />
-     <IconAction
-      icon={<UserIcon size={ACTION_ICON_SIZE} />}
-      label="Account"
-      labelSize={15}
-     />
+    <div className="main-bar__actions-wrapper">
+     <div className="main-bar__categories-responsive">
+      <Dropdown
+       variant="filled"
+       label="Browse All Categories"
+       items={CATEGORIES}
+       iconBefore={<GridIcon size={20} />}
+      />
+     </div>
+
+     <div className="main-bar__actions">
+      <IconAction
+       icon={<CompareIcon size={30} />}
+       label="Compare"
+       labelSize={15}
+       count={0}
+      />
+      <IconAction
+       icon={<HeartIcon size={30} />}
+       label="Wishlist"
+       labelSize={15}
+       count={0}
+      />
+      <IconAction
+       icon={<CartIcon size={30} />}
+       label="Cart"
+       labelSize={15}
+       count={0}
+      />
+      <IconAction
+       icon={<UserIcon size={30} />}
+       label="Account"
+       labelSize={15}
+      />
+     </div>
     </div>
    </div>
   </div>

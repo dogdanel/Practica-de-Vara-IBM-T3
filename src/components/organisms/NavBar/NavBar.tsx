@@ -62,12 +62,14 @@ function NavBar() {
  return (
   <div className="nav-bar">
    <div className="container nav-bar__inner">
-    <Dropdown
-     variant="filled"
-     label="Browse All Categories"
-     items={CATEGORIES}
-     iconBefore={<GridIcon size={20} />}
-    />
+    <div className="nav-bar__categories-desktop">
+     <Dropdown
+      variant="filled"
+      label="Browse All Categories"
+      items={CATEGORIES}
+      iconBefore={<GridIcon size={20} />}
+     />
+    </div>
 
     <a className="nav-bar__deals" href="#">
      <FireIcon size={20} />
