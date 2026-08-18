@@ -102,7 +102,7 @@
  }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 30.5rem) {
  .main-bar__inner {
   gap: 1rem;
   padding-block: 0.875rem;

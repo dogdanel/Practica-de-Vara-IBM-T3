@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-left: -1.55rem;
  }
 
  .button-set a {

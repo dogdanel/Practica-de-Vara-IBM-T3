@@ -11,15 +11,8 @@ import {
 import Logo from "../../atoms/Logo/Logo";
 import SearchBar from "../../atoms/SearchBar/SearchBar";
 import IconAction from "../../molecules/IconAction/IconAction";
+import { CategoryMenu } from "../CategoryMenu/CategoryMenu";
 import "./MainBar.css";
-
-const CATEGORIES = [
- { label: "Milks & Dairies" },
- { label: "Clothing & Beauty" },
- { label: "Pet Foods & Toys" },
- { label: "Baking Material" },
- { label: "Fresh Fruit" },
-];
 
 function MainBar() {
  return (
@@ -49,9 +42,10 @@ function MainBar() {
       <Dropdown
        variant="filled"
        label="Browse All Categories"
-       items={CATEGORIES}
        iconBefore={<GridIcon size={20} />}
-      />
+      >
+       <CategoryMenu />
+      </Dropdown>
      </div>
 
      <div className="main-bar__actions">

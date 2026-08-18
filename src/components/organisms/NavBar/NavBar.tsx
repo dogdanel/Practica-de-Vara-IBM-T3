@@ -8,11 +8,17 @@ import "./NavBar.css";
 const SUPPORT_PHONE = "1900888123";
 
 const CATEGORIES = [
- { label: "Milks & Dairies" },
- { label: "Clothing & Beauty" },
- { label: "Pet Foods & Toys" },
- { label: "Baking Material" },
- { label: "Fresh Fruit" },
+ { label: "Baking Material", count: 10 },
+ { label: "Bread and Juice", count: 12 },
+ { label: "Clothing & Beauty", count: 8 },
+ { label: "Deals of the Day", count: 4 },
+ { label: "Fresh Fruits", count: 12 },
+ { label: "Fresh Seafood", count: 6 },
+ { label: "Milk & Diaries", count: 15 },
+ { label: "Pet Foods & Toys", count: 8 },
+ { label: "Vegetables", count: 13 },
+ { label: "Wines and Drinks", count: 10 },
+ { label: "Uncategorized", count: 20 },
 ];
 
 const MENU_LABEL_SIZE = 15;
