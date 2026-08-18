@@ -28,3 +28,20 @@
  border-radius: 0;
  padding-inline: 1.625rem;
 }
+
+@media (max-width: 30rem) {
+ .search-bar {
+  width: 100%;
+  min-width: 0;
+  height: 2rem;
+ }
+
+ .search-bar__input {
+  padding: 0.5rem 0.75rem;
+  font-size: var(--fs-sm);
+ }
+
+ .search-bar__button {
+  padding-inline: 1rem;
+ }
+}

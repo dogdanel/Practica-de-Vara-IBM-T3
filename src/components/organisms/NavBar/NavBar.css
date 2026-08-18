@@ -34,7 +34,7 @@
  margin-left: auto;
 }
 
-@media (max-width: 74.9375rem) {
+@media (max-width: 77rem) {
  .nav-bar__inner {
   gap: 1.125rem;
  }
@@ -44,8 +44,11 @@
  }
 }
 
-@media (max-width: 61.9375rem) {
+@media (max-width: 70rem) {
  .nav-bar .nav-menu {
+  display: none;
+ }
+ .nav-bar__categories-desktop {
   display: none;
  }
 }

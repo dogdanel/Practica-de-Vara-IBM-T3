@@ -54,3 +54,19 @@
     font-size: var(--fs-base);
   }
 }
+
+@media (max-width: 30rem) {
+  .subscribe-box {
+    height: 2rem;
+    max-width: 15rem;
+  }
+  .subscribe-box__input {
+    padding: 0 7rem 0 1.25rem;
+    font-size: var(--fs-sm);
+  }
+  .subscribe-box__button {
+    width: 5rem;
+    height: 2rem;
+    font-size: var(--fs-sm);
+  }
+}

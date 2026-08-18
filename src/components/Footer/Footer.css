@@ -15,7 +15,6 @@
   max-width: var(--layout-max-width);
 }
 
-/* --breakpoint-lg: 64rem */
 @media (min-width: 64rem) {
   .footer__container {
     padding-left: var(--space-gutter);
@@ -33,7 +32,6 @@
   max-width: var(--layout-content-width);
 }
 
-/* --breakpoint-lg: 64rem */
 @media (min-width: 64rem) {
   .footer__main {
     flex-direction: row;

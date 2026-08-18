@@ -32,3 +32,36 @@
  height: var(--size-row-height);
  margin: 0;
 }
+
+@media (max-width: 59.375rem) {
+ .shop-page__header {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: var(--spacing-2xl);
+ }
+
+ .shop-page__title {
+  width: 100%;
+  text-align: center;
+ }
+
+ .shop-page__filters {
+  width: 100%;
+  justify-content: center;
+ }
+
+ .shop-page__filters ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+ }
+}
+
+@media (max-width: 30rem) {
+ .shop-page__title {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+ }
+}

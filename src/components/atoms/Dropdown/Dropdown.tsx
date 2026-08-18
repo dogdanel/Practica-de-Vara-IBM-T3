@@ -15,6 +15,7 @@ type DropdownProps = {
  variant?: "plain" | "nav" | "filled";
  align?: "left" | "right";
  labelSize?: number;
+ children?: ReactNode;
 };
 
 function Dropdown({
@@ -24,6 +25,7 @@ function Dropdown({
  variant = "plain",
  align = "left",
  labelSize,
+ children,
 }: DropdownProps) {
  const [open, setOpen] = useState(false);
  const rootRef = useRef<HTMLDivElement>(null);
@@ -61,14 +63,20 @@ function Dropdown({
     <ChevronDownIcon size={14} className="dropdown__caret" />
    </button>
 
-   {open && items.length > 0 && (
-    <ul className={`dropdown__menu dropdown__menu--${align}`}>
-     {items.map((item) => (
-      <li key={item.label}>
-       <a href={item.href ?? "#"}>{item.label}</a>
-      </li>
-     ))}
-    </ul>
+   {open && (
+    <div className={`dropdown__menu dropdown__menu--${align}`}>
+     {children ? (
+      children
+     ) : (
+      <ul className="dropdown__list">
+       {items.map((item) => (
+        <li key={item.label}>
+         <a href={item.href ?? "#"}>{item.label}</a>
+        </li>
+       ))}
+      </ul>
+     )}
+    </div>
    )}
   </div>
  );

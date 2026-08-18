@@ -27,3 +27,25 @@
 .slider-button__icon {
  font-size: 1rem;
 }
+
+@media (max-width: 30rem) {
+ .slider-button {
+  width: 1.8rem;
+  height: 1.8rem;
+ }
+
+ .slider-button__icon {
+  font-size: 0.8rem;
+ }
+}
+
+@media (max-width: 50rem) {
+ .slider-button {
+  width: 2.1rem;
+  height: 2.1rem;
+ }
+
+ .slider-button__icon {
+  font-size: 0.9rem;
+ }
+}

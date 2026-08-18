@@ -3,18 +3,10 @@ import { FireIcon, GridIcon } from "../../atoms/Icons";
 import NavMenu from "../../molecules/NavMenu/NavMenu";
 import type { NavMenuEntry } from "../../molecules/NavMenu/NavMenu";
 import SupportInfo from "../../molecules/SupportInfo/SupportInfo";
+import { CategoryMenu } from "../CategoryMenu/CategoryMenu";
 import "./NavBar.css";
 
 const SUPPORT_PHONE = "1900888123";
-
-const CATEGORIES = [
- { label: "Milks & Dairies" },
- { label: "Clothing & Beauty" },
- { label: "Pet Foods & Toys" },
- { label: "Baking Material" },
- { label: "Fresh Fruit" },
-];
-
 const MENU_LABEL_SIZE = 15;
 
 const ENTRIES: NavMenuEntry[] = [
@@ -62,12 +54,15 @@ function NavBar() {
  return (
   <div className="nav-bar">
    <div className="container nav-bar__inner">
-    <Dropdown
-     variant="filled"
-     label="Browse All Categories"
-     items={CATEGORIES}
-     iconBefore={<GridIcon size={20} />}
-    />
+    <div className="nav-bar__categories-desktop">
+     <Dropdown
+      variant="filled"
+      label="Browse All Categories"
+      iconBefore={<GridIcon size={20} />}
+     >
+      <CategoryMenu />
+     </Dropdown>
+    </div>
 
     <a className="nav-bar__deals" href="#">
      <FireIcon size={20} />

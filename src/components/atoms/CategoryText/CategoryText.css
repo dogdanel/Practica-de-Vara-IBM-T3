@@ -1,8 +1,14 @@
-@import '../../../styles/variables.css';
+@import "../../../styles/variables.css";
 
 .category-text {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--brand-dark);
-  line-height: 1.2;
+ font-size: 0.8rem;
+ font-weight: 600;
+ color: var(--brand-dark);
+ line-height: 1.2;
+}
+
+@media (max-height: 50rem) {
+ .category-text {
+  font-size: 0.7rem;
+ }
 }
