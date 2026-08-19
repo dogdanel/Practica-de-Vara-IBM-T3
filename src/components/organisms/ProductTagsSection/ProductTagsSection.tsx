@@ -3,16 +3,17 @@ import { CategoryHeader } from "../../atoms/CategoryHeader/CategoryHeader";
 import { TagList } from "../../molecules/TagList/TagList";
 import { PRODUCT_TAGS_MOCK } from "../../../mocks/productTags.mock";
 import type { ProductTag } from "../../../mocks/productTags.mock";
+import type { TranslationKey } from "../../../i18n";
 import "./ProductTagsSection.css";
 
 export interface ProductTagsSectionProps {
- title?: string;
+ titleKey?: TranslationKey;
  initialTags?: ProductTag[];
  className?: string;
 }
 
 export const ProductTagsSection: React.FC<ProductTagsSectionProps> = ({
- title = "Product Tags",
+ titleKey = "tags.title",
  initialTags = PRODUCT_TAGS_MOCK,
  className = "",
 }) => {
@@ -24,7 +25,7 @@ export const ProductTagsSection: React.FC<ProductTagsSectionProps> = ({
 
  return (
   <aside className={`product-tags-section ${className}`.trim()}>
-   <CategoryHeader title={title} />
+   <CategoryHeader titleKey={titleKey} />
    <div className="product-tags-section__content">
     <TagList tags={tags} onRemoveTag={handleRemoveTag} />
    </div>

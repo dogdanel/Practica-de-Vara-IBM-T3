@@ -1,8 +1,16 @@
-import { en, type Translations } from './en';
+import { en } from "./en";
+import { ro } from "./ro";
+import { fr } from "./fr";
 
-export const LOCALES = ['en'] as const;
-export type Locale = (typeof LOCALES)[number];
-export const DEFAULT_LOCALE: Locale = 'en';
+export const DEFAULT_LOCALE = "en";
+export const LOCALES = ["en", "ro", "fr"] as const;
 
-export const translations: Record<Locale, Translations> = { en };
-export type { Translations };
+export const translations = {
+ en,
+ ro,
+ fr,
+};
+
+export type Language = keyof typeof translations;
+export type Locale = Language;
+export type Translations = typeof en;
