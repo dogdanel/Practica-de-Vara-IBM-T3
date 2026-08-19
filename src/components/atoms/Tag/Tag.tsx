@@ -1,26 +1,33 @@
-import React from 'react';
-import './Tag.css';
+import React from "react";
+import { useTranslation } from "../../../i18n";
+import type { TranslationKey } from "../../../i18n";
+import "./Tag.css";
 
 export interface TagProps {
-  label: string;
-  onRemove?: () => void;
-  className?: string;
+ labelKey?: TranslationKey;
+ label?: string;
+ onRemove?: () => void;
+ className?: string;
 }
 
 export const Tag: React.FC<TagProps> = ({
-  label,
-  onRemove,
-  className = '',
+ labelKey,
+ label,
+ onRemove,
+ className = "",
 }) => {
-  return (
-    <button
-      type="button"
-      className={`product-tag ${className}`.trim()}
-      onClick={onRemove}
-      aria-label={`Remove tag ${label}`}
-    >
-      <span className="product-tag__close">✕</span>
-      <span className="product-tag__label">{label}</span>
-    </button>
-  );
+ const { t } = useTranslation();
+ const displayLabel = labelKey ? t(labelKey) : (label ?? "");
+
+ return (
+  <button
+   type="button"
+   className={`product-tag ${className}`.trim()}
+   onClick={onRemove}
+   aria-label={`Remove tag ${displayLabel}`}
+  >
+   <span className="product-tag__close">✕</span>
+   <span className="product-tag__label">{displayLabel}</span>
+  </button>
+ );
 };

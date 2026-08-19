@@ -19,6 +19,7 @@ export const TagList: React.FC<TagListProps> = ({
    {tags.map((tag) => (
     <Tag
      key={tag.id}
+     labelKey={tag.labelKey}
      label={tag.label}
      onRemove={() => onRemoveTag?.(tag.id)}
     />

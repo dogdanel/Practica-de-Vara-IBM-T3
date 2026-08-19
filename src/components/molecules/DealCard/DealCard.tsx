@@ -1,11 +1,12 @@
 import React from "react";
 import { useTranslation } from "../../../i18n";
+import type { TranslationKey } from "../../../i18n";
 import { AddToCartButton } from "../../atoms/AddToCartButton/AddToCartButton";
 import "./DealCard.css";
 
 export interface DealCardProps {
  imageSrc: string;
- title: string;
+ titleKey: TranslationKey;
  brand: string;
  price: string;
  oldPrice?: string;
@@ -15,7 +16,7 @@ export interface DealCardProps {
 
 export const DealCard: React.FC<DealCardProps> = ({
  imageSrc,
- title,
+ titleKey,
  brand,
  price,
  oldPrice,
@@ -23,15 +24,16 @@ export const DealCard: React.FC<DealCardProps> = ({
  className = "",
 }) => {
  const { t } = useTranslation();
+ const translatedTitle = t(titleKey);
 
  return (
   <div className={`deal-card ${className}`.trim()}>
    <div className="deal-card__banner">
-    <img src={imageSrc} alt={title} className="deal-card__image" />
+    <img src={imageSrc} alt={translatedTitle} className="deal-card__image" />
    </div>
 
    <div className="deal-card__content">
-    <h4 className="deal-card__title">{title}</h4>
+    <h4 className="deal-card__title">{translatedTitle}</h4>
 
     <div className="deal-card__brand-info">
      <span className="deal-card__brand-name">{brand}</span>

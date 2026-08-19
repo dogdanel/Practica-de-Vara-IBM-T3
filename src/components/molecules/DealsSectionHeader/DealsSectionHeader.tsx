@@ -1,27 +1,31 @@
-import React from 'react';
-import { DealsHeader } from '../../atoms/DealsHeader/DealsHeader';
-import { AllDealsLink } from '../../atoms/AllDealsLink/AllDealsLink';
-import './DealsSectionHeader.css';
+import React from "react";
+import { DealsHeader } from "../../atoms/DealsHeader/DealsHeader";
+import { AllDealsLink } from "../../atoms/AllDealsLink/AllDealsLink";
+import { useTranslation } from "../../../i18n";
+import type { TranslationKey } from "../../../i18n";
+import "./DealsSectionHeader.css";
 
 export interface DealsSectionHeaderProps {
-  title: string;
-  linkText: string;
-  linkHref?: string;
-  onLinkClick?: () => void;
-  className?: string;
+ titleKey?: TranslationKey;
+ linkTextKey?: TranslationKey;
+ linkHref?: string;
+ onLinkClick?: () => void;
+ className?: string;
 }
 
 export const DealsSectionHeader: React.FC<DealsSectionHeaderProps> = ({
-  title,
-  linkText,
-  linkHref,
-  onLinkClick,
-  className = '',
+ titleKey = "deals.title",
+ linkTextKey = "deals.seeAll",
+ linkHref,
+ onLinkClick,
+ className = "",
 }) => {
-  return (
-    <div className={`deals-section-header ${className}`.trim()}>
-      <DealsHeader>{title}</DealsHeader>
-      <AllDealsLink text={linkText} href={linkHref} onClick={onLinkClick} />
-    </div>
-  );
+ const { t } = useTranslation();
+
+ return (
+  <div className={`deals-section-header ${className}`.trim()}>
+   <DealsHeader>{t(titleKey)}</DealsHeader>
+   <AllDealsLink text={t(linkTextKey)} href={linkHref} onClick={onLinkClick} />
+  </div>
+ );
 };

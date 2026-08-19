@@ -1,15 +1,18 @@
+import type { TranslationKey } from "../i18n";
+
 export interface ProductTag {
-  id: string;
-  label: string;
+ id: string;
+ labelKey: TranslationKey;
+ label?: string;
 }
 
 export const PRODUCT_TAGS_MOCK: ProductTag[] = [
-  { id: 'tag-1', label: 'Brown' },
-  { id: 'tag-2', label: 'Coffees' },
-  { id: 'tag-3', label: 'Cream' },
-  { id: 'tag-4', label: 'Hodo Foods' },
-  { id: 'tag-5', label: 'Meats' },
-  { id: 'tag-6', label: 'Organic' },
-  { id: 'tag-7', label: 'Snack' },
-  { id: 'tag-8', label: 'Vegetables' },
+ { id: "tag-1", labelKey: "tags.brown" },
+ { id: "tag-2", labelKey: "tags.coffees" },
+ { id: "tag-3", labelKey: "tags.cream" },
+ { id: "tag-4", labelKey: "tags.hodo" },
+ { id: "tag-5", labelKey: "tags.meats" },
+ { id: "tag-6", labelKey: "tags.organic" },
+ { id: "tag-7", labelKey: "tags.snack" },
+ { id: "tag-8", labelKey: "tags.vegetables" },
 ];

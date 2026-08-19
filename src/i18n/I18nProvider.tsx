@@ -8,6 +8,8 @@ interface I18nProviderProps {
 }
 
 function resolve(dictionary: unknown, key: string): string | undefined {
+ if (!key || typeof key !== "string") return undefined;
+
  const value = key.split(".").reduce<unknown>((acc, part) => {
   if (
    acc &&
@@ -46,7 +48,7 @@ export default function I18nProvider({
    if (text === undefined) {
     if (import.meta.env.DEV)
      console.warn(`[i18n] Missing translation for "${key}"`);
-    return key;
+    return key ?? "";
    }
    return interpolate(text, params);
   },

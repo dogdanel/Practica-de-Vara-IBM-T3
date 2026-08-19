@@ -2,19 +2,20 @@ import React from "react";
 import { DealsSectionHeader } from "../../molecules/DealsSectionHeader/DealsSectionHeader";
 import { DealCard } from "../../molecules/DealCard/DealCard";
 import type { DealCardProps } from "../../molecules/DealCard/DealCard";
+import type { TranslationKey } from "../../../i18n";
 import "./DealsSection.css";
 
 export interface DealsSectionProps {
- title: string;
- linkText: string;
+ titleKey?: TranslationKey;
+ linkTextKey?: TranslationKey;
  deals: Array<Omit<DealCardProps, "className"> & { id: string | number }>;
  onLinkClick?: () => void;
  className?: string;
 }
 
 export const DealsSection: React.FC<DealsSectionProps> = ({
- title,
- linkText,
+ titleKey = "deals.title",
+ linkTextKey = "deals.seeAll",
  deals,
  onLinkClick,
  className = "",
@@ -22,8 +23,8 @@ export const DealsSection: React.FC<DealsSectionProps> = ({
  return (
   <section className={`deals-section ${className}`.trim()}>
    <DealsSectionHeader
-    title={title}
-    linkText={linkText}
+    titleKey={titleKey}
+    linkTextKey={linkTextKey}
     onLinkClick={onLinkClick}
    />
 
