@@ -121,6 +121,28 @@ export const ro = {
    coffeeCreamer: "Cremă pentru cafea Nestle Coffee Mate",
   },
  },
+ promos: {
+  shopNow: "Cumpără acum",
+  card1Title: "Produse zilnice proaspete și curate",
+  card2Title: "Fă-ți micul dejun sănătos și ușor",
+  card3Title: "Cele mai bune produse organice online",
+ },
+ featured: {
+  topSelling: "Cel mai bine vândute",
+  trending: "Produse în tendințe",
+  recentlyAdded: "Adăugate recent",
+  topRated: "Cele mai bine evaluate",
+  products: {
+   chickenMeatballs: "Chifteluțe de pui în stil natural",
+   kettleCorn: "Floricele de porumb dulci și sărate Angie's",
+   fishFillets: "File de pește în aluat cu bere Gorton's",
+   watermelon: "Pepene verde organic Seeds of Change",
+   broccoliSpinach: "Legume congelate broccoli, spanac",
+   redRice: "Orez roșu organic Seeds of Change",
+   blueAlmonds: "Legume ușor sărate Blue Almonds",
+   organicEggs: "Ouă ecologice Categoria A Mărimea L",
+  },
+ },
  common: {
   followUs: "Urmărește-ne",
  },

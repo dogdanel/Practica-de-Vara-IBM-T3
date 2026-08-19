@@ -120,6 +120,28 @@ export const en = {
    coffeeCreamer: "Nestle Coffee Mate Coffee Creamer",
   },
  },
+ promos: {
+  shopNow: "Shop Now",
+  card1Title: "Everyday Fresh & Clean with Our Products",
+  card2Title: "Make your Breakfast Healthy and Easy",
+  card3Title: "The best Organic Products Online",
+ },
+ featured: {
+  topSelling: "Top Selling",
+  trending: "Trending Products",
+  recentlyAdded: "Recently added",
+  topRated: "Top Rated",
+  products: {
+   chickenMeatballs: "All Natural Style Chicken Meatballs",
+   kettleCorn: "Angie's Sweet & Salty Kettle Corn",
+   fishFillets: "Gorton's Beer Battered Fish Fillets",
+   watermelon: "Seeds of Change Organic Watermelon",
+   broccoliSpinach: "Frozen vegetables broccoli, spinach",
+   redRice: "Seeds of Change Organic Red Rice",
+   blueAlmonds: "Blue Almonds Lightly Salted Vegetables",
+   organicEggs: "Organic Cage Grade A Large Eggs",
+  },
+ },
  common: {
   followUs: "Follow Us",
  },
