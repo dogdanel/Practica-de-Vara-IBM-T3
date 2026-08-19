@@ -6,6 +6,7 @@ import "./Dropdown.css";
 export type DropdownItem = {
  label: string;
  href?: string;
+ onClick?: () => void;
 };
 
 type DropdownProps = {
@@ -71,7 +72,23 @@ function Dropdown({
       <ul className="dropdown__list">
        {items.map((item) => (
         <li key={item.label}>
-         <a href={item.href ?? "#"}>{item.label}</a>
+         {item.onClick ? (
+          <button
+           type="button"
+           className="dropdown__link-button"
+           onClick={(e) => {
+            e.stopPropagation();
+            item.onClick?.();
+            setOpen(false);
+           }}
+          >
+           {item.label}
+          </button>
+         ) : (
+          <a href={item.href ?? "#"} onClick={() => setOpen(false)}>
+           {item.label}
+          </a>
+         )}
         </li>
        ))}
       </ul>

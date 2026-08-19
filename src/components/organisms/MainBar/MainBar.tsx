@@ -13,8 +13,11 @@ import SearchBar from "../../atoms/SearchBar/SearchBar";
 import IconAction from "../../molecules/IconAction/IconAction";
 import { CategoryMenu } from "../CategoryMenu/CategoryMenu";
 import "./MainBar.css";
+import useTranslation from "../../../i18n/useTranslation";
 
 function MainBar() {
+ const { t: translation } = useTranslation();
+
  return (
   <div className="main-bar">
    <div className="container main-bar__inner">
@@ -23,9 +26,9 @@ function MainBar() {
     </div>
 
     <SearchBar
-     placeholder="Search for products..."
-     buttonLabel="Search"
-     onSearch={(query) => console.log("search:", query)}
+     placeholder={translation("MainBar.searchPlaceholder")}
+     buttonLabel={translation("MainBar.searchButton")}
+     onSearch={(query) => console.log(query)}
     />
 
     <Button
@@ -34,14 +37,14 @@ function MainBar() {
      className="main-bar__vendor"
      iconAfter={<ArrowRightIcon size={20} />}
     >
-     Became Vendor
+     {translation("MainBar.becomeVendor")}
     </Button>
 
     <div className="main-bar__actions-wrapper">
      <div className="main-bar__categories-responsive">
       <Dropdown
        variant="filled"
-       label="Browse All Categories"
+       label={translation("NavBar.browseCategories")}
        iconBefore={<GridIcon size={20} />}
       >
        <CategoryMenu />
@@ -51,25 +54,25 @@ function MainBar() {
      <div className="main-bar__actions">
       <IconAction
        icon={<CompareIcon size={30} />}
-       label="Compare"
+       label={translation("MainBar.compare")}
        labelSize={15}
        count={0}
       />
       <IconAction
        icon={<HeartIcon size={30} />}
-       label="Wishlist"
+       label={translation("MainBar.wishlist")}
        labelSize={15}
        count={0}
       />
       <IconAction
        icon={<CartIcon size={30} />}
-       label="Cart"
+       label={translation("MainBar.cart")}
        labelSize={15}
        count={0}
       />
       <IconAction
        icon={<UserIcon size={30} />}
-       label="Account"
+       label={translation("MainBar.account")}
        labelSize={15}
       />
      </div>
